@@ -118,7 +118,7 @@ public class PortalGunItem extends Item {
 			return TypedActionResult.fail(stack);
 		}
 
-		BlockHitResult hit = user.raycast(16, 0, false) instanceof BlockHitResult b ? b : null;
+		BlockHitResult hit = user.raycast(16, 1.0f, false) instanceof BlockHitResult b ? b : null;
 		boolean hasBlock = hit.getType() == HitResult.Type.BLOCK;
 		boolean sneaking = user.isSneaking();
 

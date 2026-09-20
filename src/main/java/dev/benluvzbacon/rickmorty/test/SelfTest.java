@@ -212,7 +212,7 @@ public class SelfTest {
 			fake.setPos(base.getX() + 0.5, base.getY() + 1.0, base.getZ() + 0.5); // feet ON TOP of the ground block
 			fake.setPitch(60f);
 			// diagnostics: what does the fake player see?
-			var diagHit = fake.raycast(16, 0, false);
+			var diagHit = fake.raycast(16, 1.0f, false);
 			Object diag = diagHit.getType() + "@" + (diagHit instanceof net.minecraft.util.hit.BlockHitResult bh
 					? bh.getBlockPos() + " side=" + bh.getSide() + " block=" + overworld.getBlockState(bh.getBlockPos()).getBlock() : "n/a");
 			TypedActionResult<ItemStack> result = gun.use(overworld, fake, Hand.MAIN_HAND);
