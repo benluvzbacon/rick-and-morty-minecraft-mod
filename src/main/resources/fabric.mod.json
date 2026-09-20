@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "rickmorty",
+	"version": "${version}",
+	"name": "Rick and Morty: Interdimensional Craft",
+	"description": "Adds Rick Sanchez, Morty, portal gun technology, portal fluid, four unique dimensions, the Citadel of Ricks, Mr. Meeseeks, advanced weapons and gadgets, structures, events and a boss. Wubba lubba dub dub!",
+	"authors": [
+		"benluvzbacon"
+	],
+	"contact": {
+		"homepage": "https://github.com/benluvzbacon/rick-and-morty-minecraft-mod",
+		"sources": "https://github.com/benluvzbacon/rick-and-morty-minecraft-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rickmorty/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.benluvzbacon.rickmorty.RickMortyMod"
+		],
+		"client": [
+			"dev.benluvzbacon.rickmorty.client.RickMortyClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
