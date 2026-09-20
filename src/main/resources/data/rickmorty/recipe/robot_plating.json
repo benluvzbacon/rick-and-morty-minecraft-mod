@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IA",
+    "AI",
+    "  "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "A": {
+      "item": "rickmorty:alien_alloy_ingot"
+    }
+  },
+  "result": {
+    "id": "rickmorty:robot_plating",
+    "count": 4
+  }
+}

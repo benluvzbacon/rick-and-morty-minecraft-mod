@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " E ",
+    "GCG",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "rickmorty:energy_cell"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "C": {
+      "item": "rickmorty:alien_crystal"
+    }
+  },
+  "result": {
+    "id": "rickmorty:plasma_cell",
+    "count": 2
+  }
+}

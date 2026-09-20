@@ -1,0 +1,8 @@
+{
+  "type": "rickmorty:alien_planet",
+  "generator": {
+    "type": "rickmorty:rm_generator",
+    "biome": "rickmorty:alien_plains",
+    "preset": "alien"
+  }
+}

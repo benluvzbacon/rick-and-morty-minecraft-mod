@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rickmorty:block/citadel_metal"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "rickmorty:block/sci_fi_metal",
+    "top": "rickmorty:block/meeseeks_box_top",
+    "side": "rickmorty:block/meeseeks_box_side"
+  }
+}

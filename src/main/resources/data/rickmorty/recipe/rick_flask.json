@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "GAG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "A": {
+      "item": "rickmorty:filled_portal_fluid_canister"
+    }
+  },
+  "result": {
+    "id": "rickmorty:rick_flask",
+    "count": 1
+  }
+}

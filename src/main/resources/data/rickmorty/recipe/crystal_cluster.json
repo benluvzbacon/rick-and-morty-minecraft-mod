@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A A",
+    " A ",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "rickmorty:alien_crystal"
+    }
+  },
+  "result": {
+    "id": "rickmorty:crystal_cluster",
+    "count": 1
+  }
+}

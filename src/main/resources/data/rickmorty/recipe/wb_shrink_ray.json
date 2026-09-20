@@ -1,0 +1,33 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "CGC",
+    "AQE",
+    "S S"
+  ],
+  "key": {
+    "C": {
+      "item": "rickmorty:interdimensional_crystal"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "A": {
+      "item": "rickmorty:portal_gun_frame"
+    },
+    "Q": {
+      "item": "rickmorty:quantum_circuit"
+    },
+    "E": {
+      "item": "rickmorty:energy_cell"
+    },
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    }
+  },
+  "result": {
+    "id": "rickmorty:shrink_ray",
+    "count": 1
+  },
+  "tier": 2
+}

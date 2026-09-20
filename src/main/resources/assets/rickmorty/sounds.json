@@ -1,0 +1,92 @@
+{
+  "portal.teleport": {
+    "subtitle": "sound.rickmorty.portal.teleport",
+    "sounds": [
+      "rickmorty:portal/teleport"
+    ]
+  },
+  "portal.open": {
+    "subtitle": "sound.rickmorty.portal.open",
+    "sounds": [
+      "rickmorty:portal/open"
+    ]
+  },
+  "portal.close": {
+    "subtitle": "sound.rickmorty.portal.close",
+    "sounds": [
+      "rickmorty:portal/close"
+    ]
+  },
+  "portal.storm": {
+    "subtitle": "sound.rickmorty.portal.storm",
+    "sounds": [
+      "rickmorty:portal/storm"
+    ]
+  },
+  "gun.zap": {
+    "subtitle": "sound.rickmorty.gun.zap",
+    "sounds": [
+      "rickmorty:gun/zap"
+    ]
+  },
+  "gun.charge": {
+    "subtitle": "sound.rickmorty.gun.charge",
+    "sounds": [
+      "rickmorty:gun/charge"
+    ]
+  },
+  "gun.fail": {
+    "subtitle": "sound.rickmorty.gun.fail",
+    "sounds": [
+      "rickmorty:gun/fail"
+    ]
+  },
+  "workbench.craft": {
+    "subtitle": "sound.rickmorty.workbench.craft",
+    "sounds": [
+      "rickmorty:workbench/craft"
+    ]
+  },
+  "boss.roar": {
+    "subtitle": "sound.rickmorty.boss.roar",
+    "sounds": [
+      "rickmorty:boss/roar"
+    ]
+  },
+  "boss.retreat": {
+    "subtitle": "sound.rickmorty.boss.retreat",
+    "sounds": [
+      "rickmorty:boss/retreat"
+    ]
+  },
+  "anomaly": {
+    "subtitle": "sound.rickmorty.anomaly",
+    "sounds": [
+      "rickmorty:anomaly"
+    ]
+  },
+  "laser.shot": {
+    "subtitle": "sound.rickmorty.laser.shot",
+    "sounds": [
+      "rickmorty:laser/shot"
+    ]
+  },
+  "plasma.fire": {
+    "subtitle": "sound.rickmorty.plasma.fire",
+    "sounds": [
+      "rickmorty:plasma/fire"
+    ]
+  },
+  "shrink.zap": {
+    "subtitle": "sound.rickmorty.shrink.zap",
+    "sounds": [
+      "rickmorty:shrink/zap"
+    ]
+  },
+  "grapnel.release": {
+    "subtitle": "sound.rickmorty.grapnel.release",
+    "sounds": [
+      "rickmorty:grapnel/release"
+    ]
+  }
+}

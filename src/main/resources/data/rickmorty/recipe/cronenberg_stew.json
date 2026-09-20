@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "rickmorty:mutant_tissue"
+    }
+  ],
+  "result": {
+    "id": "rickmorty:cronenberg_stew",
+    "count": 1
+  }
+}

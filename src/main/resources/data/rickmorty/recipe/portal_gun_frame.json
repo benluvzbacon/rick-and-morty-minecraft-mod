@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "GGP",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "rickmorty:robot_plating"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "id": "rickmorty:portal_gun_frame",
+    "count": 1
+  }
+}

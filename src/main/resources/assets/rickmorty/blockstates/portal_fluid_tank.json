@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "level=0": {
+      "model": "rickmorty:block/portal_fluid_tank_0"
+    },
+    "level=1": {
+      "model": "rickmorty:block/portal_fluid_tank_1"
+    },
+    "level=2": {
+      "model": "rickmorty:block/portal_fluid_tank_2"
+    },
+    "level=3": {
+      "model": "rickmorty:block/portal_fluid_tank_3"
+    },
+    "level=4": {
+      "model": "rickmorty:block/portal_fluid_tank_4"
+    },
+    "level=5": {
+      "model": "rickmorty:block/portal_fluid_tank_5"
+    },
+    "level=6": {
+      "model": "rickmorty:block/portal_fluid_tank_6"
+    },
+    "level=7": {
+      "model": "rickmorty:block/portal_fluid_tank_7"
+    },
+    "level=8": {
+      "model": "rickmorty:block/portal_fluid_tank_8"
+    }
+  }
+}

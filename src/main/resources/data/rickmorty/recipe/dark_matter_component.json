@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "rickmorty:dark_matter"
+    },
+    {
+      "item": "rickmorty:alien_alloy_ingot"
+    },
+    {
+      "item": "rickmorty:advanced_circuitry"
+    }
+  ],
+  "result": {
+    "id": "rickmorty:dark_matter_component",
+    "count": 2
+  }
+}

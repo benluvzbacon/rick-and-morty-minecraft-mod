@@ -1,0 +1,27 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "PTP",
+    "FEF",
+    "PFP"
+  ],
+  "key": {
+    "P": {
+      "item": "rickmorty:robot_plating"
+    },
+    "T": {
+      "item": "rickmorty:filled_portal_fluid_canister"
+    },
+    "F": {
+      "item": "rickmorty:sci_fi_metal"
+    },
+    "E": {
+      "item": "rickmorty:quantum_circuit"
+    }
+  },
+  "result": {
+    "id": "rickmorty:jetpack",
+    "count": 1
+  },
+  "tier": 3
+}

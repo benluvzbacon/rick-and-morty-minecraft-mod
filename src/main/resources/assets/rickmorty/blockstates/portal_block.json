@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "color=green": {
+      "model": "rickmorty:block/portal_block_green"
+    },
+    "color=blue": {
+      "model": "rickmorty:block/portal_block_blue"
+    },
+    "color=purple": {
+      "model": "rickmorty:block/portal_block_purple"
+    }
+  }
+}

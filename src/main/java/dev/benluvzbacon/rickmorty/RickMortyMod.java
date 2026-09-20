@@ -1,9 +1,11 @@
 package dev.benluvzbacon.rickmorty;
 
+import dev.benluvzbacon.rickmorty.config.ModConfig;
+import dev.benluvzbacon.rickmorty.network.ModNetworking;
+import dev.benluvzbacon.rickmorty.registry.*;
+import dev.benluvzbacon.rickmorty.event.ModEvents;
+import dev.benluvzbacon.rickmorty.test.SelfTest;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,11 +18,24 @@ public class RickMortyMod implements ModInitializer {
 		return Identifier.of(MOD_ID, path);
 	}
 
-	public static final Item TEST_ITEM = new Item(new Item.Settings());
-
 	@Override
 	public void onInitialize() {
-		Registry.register(Registries.ITEM, id("test_item"), TEST_ITEM);
-		LOGGER.info("[RickMorty] Smoke test item registered. Wubba lubba dub dub!");
+		ModConfig.load();
+		ModSounds.register();
+		ModBlocks.register();
+		ModBlockEntities.register();
+		ModEntities.register(); // entity types must exist before spawn eggs
+		ModItems.register();
+		ModStatusEffects.register();
+		ModRecipes.register();
+		ModScreenHandlers.register();
+		ModCreativeTab.register();
+		ModDimensions.register();
+		ModNetworking.register();
+		ModCommands.register();
+		ModEvents.register();
+		ModFeatures.register();
+		SelfTest.register();
+		LOGGER.info("[RickMorty] Initialized. Wubba lubba dub dub!");
 	}
 }

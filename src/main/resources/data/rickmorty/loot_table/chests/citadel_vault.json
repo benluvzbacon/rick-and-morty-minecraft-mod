@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 4,
+        "max": 7
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "rickmorty:advanced_circuitry"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "rickmorty:dark_matter"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:gold_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "rickmorty:jetpack"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "rickmorty:pocket_crystal"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "rickmorty:dimension_eraser"
+        }
+      ]
+    }
+  ]
+}

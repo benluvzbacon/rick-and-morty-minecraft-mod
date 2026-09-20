@@ -1,0 +1,147 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "0": "rickmorty:block/portal_fluid_tank_frame",
+    "1": "rickmorty:block/portal_fluid",
+    "particle": "rickmorty:block/portal_fluid_tank_frame"
+  },
+  "elements": [
+    {
+      "from": [
+        1,
+        1,
+        1
+      ],
+      "to": [
+        15,
+        15,
+        15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        2,
+        2
+      ],
+      "to": [
+        14,
+        6.9,
+        14
+      ],
+      "render_type": "translucent",
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            11.1,
+            16,
+            14
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            0,
+            11.1,
+            16,
+            14
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            0,
+            11.1,
+            16,
+            14
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            0,
+            11.1,
+            16,
+            14
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            0,
+            11.1,
+            16,
+            14
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            0,
+            11.1,
+            16,
+            14
+          ],
+          "texture": "#1"
+        }
+      }
+    }
+  ]
+}

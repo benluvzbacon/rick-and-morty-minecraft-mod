@@ -1,0 +1,27 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "SAS",
+    "IDI",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    },
+    "A": {
+      "item": "rickmorty:alien_alloy_ingot"
+    },
+    "I": {
+      "item": "rickmorty:interdimensional_crystal"
+    },
+    "D": {
+      "item": "rickmorty:advanced_circuitry"
+    }
+  },
+  "result": {
+    "id": "rickmorty:force_field_generator",
+    "count": 1
+  },
+  "tier": 2
+}

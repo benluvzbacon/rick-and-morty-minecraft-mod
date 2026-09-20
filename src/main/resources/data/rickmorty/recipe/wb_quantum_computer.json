@@ -1,0 +1,24 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "SQS",
+    "QAQ",
+    "SQS"
+  ],
+  "key": {
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    },
+    "Q": {
+      "item": "rickmorty:quantum_circuit"
+    },
+    "A": {
+      "item": "minecraft:beacon"
+    }
+  },
+  "result": {
+    "id": "rickmorty:quantum_computer",
+    "count": 1
+  },
+  "tier": 2
+}

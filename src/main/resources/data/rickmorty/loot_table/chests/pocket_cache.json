@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "rickmorty:pocket_crystal"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "rickmorty:interdimensional_crystal"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "rickmorty:dark_matter"
+        }
+      ]
+    }
+  ]
+}

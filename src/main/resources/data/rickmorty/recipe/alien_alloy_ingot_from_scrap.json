@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "rickmorty:robot_plating"
+  },
+  "result": {
+    "id": "rickmorty:alien_alloy_ingot"
+  },
+  "experience": 0.4,
+  "cookingtime": 200
+}

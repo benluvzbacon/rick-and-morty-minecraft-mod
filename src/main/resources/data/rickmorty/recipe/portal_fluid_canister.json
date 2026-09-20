@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "GBG",
+    " S "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "B": {
+      "item": "minecraft:iron_nugget"
+    },
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    }
+  },
+  "result": {
+    "id": "rickmorty:portal_fluid_canister",
+    "count": 2
+  }
+}

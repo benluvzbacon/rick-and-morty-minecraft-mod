@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "rickmorty:item/alien_alloy_ingot"
+  }
+}

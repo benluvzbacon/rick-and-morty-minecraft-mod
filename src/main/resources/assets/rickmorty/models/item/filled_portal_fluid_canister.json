@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "rickmorty:item/filled_portal_fluid_canister"
+  }
+}

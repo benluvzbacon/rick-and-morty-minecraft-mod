@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PG ",
+    "CAG",
+    "SP "
+  ],
+  "key": {
+    "P": {
+      "item": "rickmorty:robot_plating"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "rickmorty:portal_gun_frame"
+    },
+    "A": {
+      "item": "rickmorty:advanced_circuitry"
+    },
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    }
+  },
+  "result": {
+    "id": "rickmorty:portal_blaster",
+    "count": 1
+  }
+}

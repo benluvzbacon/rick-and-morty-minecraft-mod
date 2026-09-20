@@ -1,0 +1,27 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "SBS",
+    "ARA",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    },
+    "B": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "A": {
+      "item": "rickmorty:advanced_circuitry"
+    },
+    "R": {
+      "item": "rickmorty:rift_shard"
+    }
+  },
+  "result": {
+    "id": "rickmorty:meeseeks_box",
+    "count": 1
+  },
+  "tier": 1
+}

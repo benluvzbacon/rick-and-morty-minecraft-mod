@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CGC",
+    "AEE",
+    "S S "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "G": {
+      "item": "minecraft:redstone"
+    },
+    "A": {
+      "item": "rickmorty:advanced_circuitry"
+    },
+    "E": {
+      "item": "rickmorty:energy_cell"
+    },
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    }
+  },
+  "result": {
+    "id": "rickmorty:laser_gun",
+    "count": 1
+  }
+}

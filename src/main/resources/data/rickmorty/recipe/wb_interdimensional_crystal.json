@@ -1,0 +1,27 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "APG",
+    "PEP",
+    "GPA"
+  ],
+  "key": {
+    "A": {
+      "item": "rickmorty:alien_crystal"
+    },
+    "P": {
+      "item": "rickmorty:pocket_crystal"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "E": {
+      "item": "rickmorty:rift_shard"
+    }
+  },
+  "result": {
+    "id": "rickmorty:interdimensional_crystal",
+    "count": 2
+  },
+  "tier": 3
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WWW",
+    "RQR",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "rickmorty:simple_wafer"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "id": "rickmorty:advanced_circuitry",
+    "count": 2
+  }
+}

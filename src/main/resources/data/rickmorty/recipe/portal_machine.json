@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "AEA",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    },
+    "A": {
+      "item": "rickmorty:advanced_circuitry"
+    },
+    "E": {
+      "item": "rickmorty:energy_cell"
+    }
+  },
+  "result": {
+    "id": "rickmorty:portal_machine",
+    "count": 1
+  }
+}

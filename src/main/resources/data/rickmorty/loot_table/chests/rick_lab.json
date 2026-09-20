@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 3,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "rickmorty:advanced_circuitry"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "rickmorty:energy_cell"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "rickmorty:portal_fluid_canister"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "rickmorty:quantum_circuit"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "rickmorty:portal_gun_frame"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "rickmorty:alien_alloy_ingot"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "rickmorty:portal_gun"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}

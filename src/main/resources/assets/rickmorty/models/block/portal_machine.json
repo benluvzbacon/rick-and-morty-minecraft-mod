@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "rickmorty:block/sci_fi_metal",
+    "top": "rickmorty:block/portal_machine_top",
+    "side": "rickmorty:block/portal_machine_side"
+  }
+}

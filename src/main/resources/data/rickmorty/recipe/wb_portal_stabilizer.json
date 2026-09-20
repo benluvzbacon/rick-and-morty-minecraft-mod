@@ -1,0 +1,27 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "ASA",
+    "RER",
+    "SSS"
+  ],
+  "key": {
+    "A": {
+      "item": "rickmorty:alien_alloy_ingot"
+    },
+    "S": {
+      "item": "rickmorty:sci_fi_metal"
+    },
+    "R": {
+      "item": "rickmorty:rift_shard"
+    },
+    "E": {
+      "item": "rickmorty:energy_cell"
+    }
+  },
+  "result": {
+    "id": "rickmorty:portal_stabilizer",
+    "count": 1
+  },
+  "tier": 2
+}

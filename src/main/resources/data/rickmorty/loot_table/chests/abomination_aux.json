@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "rickmorty:plasma_cell"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "rickmorty:filled_portal_fluid_canister"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "A A",
+    "CBC",
+    "EEE"
+  ],
+  "key": {
+    "A": {
+      "item": "rickmorty:alien_crystal"
+    },
+    "C": {
+      "item": "rickmorty:portal_fluid_canister"
+    },
+    "B": {
+      "item": "rickmorty:energy_cell"
+    },
+    "E": {
+      "item": "rickmorty:alien_alloy_ingot"
+    }
+  },
+  "result": {
+    "id": "rickmorty:filled_portal_fluid_canister",
+    "count": 1
+  },
+  "tier": 1
+}

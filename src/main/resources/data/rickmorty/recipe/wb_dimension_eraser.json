@@ -1,0 +1,27 @@
+{
+  "type": "rickmorty:workbench",
+  "pattern": [
+    "IDI",
+    "DMD",
+    "IQI"
+  ],
+  "key": {
+    "I": {
+      "item": "rickmorty:interdimensional_crystal"
+    },
+    "D": {
+      "item": "rickmorty:dark_matter_component"
+    },
+    "M": {
+      "item": "rickmorty:dark_matter"
+    },
+    "Q": {
+      "item": "rickmorty:quantum_circuit"
+    }
+  },
+  "result": {
+    "id": "rickmorty:dimension_eraser",
+    "count": 1
+  },
+  "tier": 3
+}
