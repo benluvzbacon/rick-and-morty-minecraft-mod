@@ -187,7 +187,7 @@ public class RMChunkGenerator extends ChunkGenerator {
 	}
 
 	@Override
-	public void populateEntities(net.minecraft.world.chunk.Chunk chunk) {
+	public void populateEntities(net.minecraft.world.ChunkRegion chunkRegion) {
 		// ambient mobs are handled by the vanilla spawner + our biome spawn rules
 	}
 
