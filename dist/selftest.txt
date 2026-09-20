@@ -1,42 +1,203 @@
 ===== SELF TEST RESULTS =====
 
 ===== SERVER LOG (tail) =====
-To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
-Daemon will be stopped at the end of the build 
+	at knot//net.minecraft.registry.RegistryLoader.load(RegistryLoader.java:164)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$load$33(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries(RegistryLoader.java:1057)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries$34(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zja000$fabric-registry-sync-v0$wrapIsServerCall(RegistryLoader.java:1556)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:151)
+	at knot//net.minecraft.server.SaveLoading.loadDynamicRegistryManager(SaveLoading.java:62)
+	at knot//net.minecraft.server.SaveLoading.withRegistriesLoaded(SaveLoading.java:66)
+	at knot//net.minecraft.server.SaveLoading.load(SaveLoading.java:32)
+	at knot//net.minecraft.server.Main.method_43612(Main.java:184)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1018)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1012)
+	at knot//net.minecraft.server.Main.main(Main.java:182)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.IllegalStateException: No key monster_spawn_block_light_limit in MapLike[{"ambient_light":0.0,"bed_works":true,"coordinate_scale":1.0,"effects":"minecraft:overworld","has_ceiling":false,"has_raids":true,"has_skylight":true,"infiniburn":"#minecraft:infiniburn_overworld","logical_height":384,"min_y":-64,"height":384,"natural":true,"piglin_safe":false,"respawn_anchor_works":false,"ultrawarm":false}]; No key monster_spawn_light_level in MapLike[{"ambient_light":0.0,"bed_works":true,"coordinate_scale":1.0,"effects":"minecraft:overworld","has_ceiling":false,"has_raids":true,"has_skylight":true,"infiniburn":"#minecraft:infiniburn_overworld","logical_height":384,"min_y":-64,"height":384,"natural":true,"piglin_safe":false,"respawn_anchor_works":false,"ultrawarm":false}]
+	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+	at knot//net.minecraft.registry.RegistryLoader.parseAndAdd(RegistryLoader.java:231)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:249)
+	... 21 more
+> Errors in registry minecraft:worldgen/biome:
+>> Errors in element rickmorty:alien_fields:
+java.lang.IllegalStateException: Failed to parse rickmorty:worldgen/biome/alien_fields.json from pack rickmorty
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:251)
+	at knot//net.minecraft.registry.RegistryLoader$Loader.loadFromResource(RegistryLoader.java:96)
+	at knot//net.minecraft.registry.RegistryLoader.method_56514(RegistryLoader.java:151)
+	at knot//net.minecraft.registry.RegistryLoader.method_45120(RegistryLoader.java:164)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at knot//net.minecraft.registry.RegistryLoader.load(RegistryLoader.java:164)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$load$33(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries(RegistryLoader.java:1057)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries$34(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zja000$fabric-registry-sync-v0$wrapIsServerCall(RegistryLoader.java:1556)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:151)
+	at knot//net.minecraft.server.SaveLoading.loadDynamicRegistryManager(SaveLoading.java:62)
+	at knot//net.minecraft.server.SaveLoading.withRegistriesLoaded(SaveLoading.java:66)
+	at knot//net.minecraft.server.SaveLoading.load(SaveLoading.java:32)
+	at knot//net.minecraft.server.Main.method_43612(Main.java:184)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1018)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1012)
+	at knot//net.minecraft.server.Main.main(Main.java:182)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.IllegalStateException: Not a JSON object: ["minecraft:cave","minecraft:cave_extra_underground","minecraft:canyon"]; Not a number: "#7fd8a0"; Not a number: "#66cc88"
+	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+	at knot//net.minecraft.registry.RegistryLoader.parseAndAdd(RegistryLoader.java:231)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:249)
+	... 21 more
+>> Errors in element rickmorty:citadel_plaza:
+java.lang.IllegalStateException: Failed to parse rickmorty:worldgen/biome/citadel_plaza.json from pack rickmorty
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:251)
+	at knot//net.minecraft.registry.RegistryLoader$Loader.loadFromResource(RegistryLoader.java:96)
+	at knot//net.minecraft.registry.RegistryLoader.method_56514(RegistryLoader.java:151)
+	at knot//net.minecraft.registry.RegistryLoader.method_45120(RegistryLoader.java:164)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at knot//net.minecraft.registry.RegistryLoader.load(RegistryLoader.java:164)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$load$33(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries(RegistryLoader.java:1057)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries$34(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zja000$fabric-registry-sync-v0$wrapIsServerCall(RegistryLoader.java:1556)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:151)
+	at knot//net.minecraft.server.SaveLoading.loadDynamicRegistryManager(SaveLoading.java:62)
+	at knot//net.minecraft.server.SaveLoading.withRegistriesLoaded(SaveLoading.java:66)
+	at knot//net.minecraft.server.SaveLoading.load(SaveLoading.java:32)
+	at knot//net.minecraft.server.Main.method_43612(Main.java:184)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1018)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1012)
+	at knot//net.minecraft.server.Main.main(Main.java:182)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.IllegalStateException: Not a JSON object: ["minecraft:cave","minecraft:cave_extra_underground","minecraft:canyon"]; Not a number: "#4d515a"; Not a number: "#4d515a"
+	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+	at knot//net.minecraft.registry.RegistryLoader.parseAndAdd(RegistryLoader.java:231)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:249)
+	... 21 more
+>> Errors in element rickmorty:cronenberg_wastes:
+java.lang.IllegalStateException: Failed to parse rickmorty:worldgen/biome/cronenberg_wastes.json from pack rickmorty
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:251)
+	at knot//net.minecraft.registry.RegistryLoader$Loader.loadFromResource(RegistryLoader.java:96)
+	at knot//net.minecraft.registry.RegistryLoader.method_56514(RegistryLoader.java:151)
+	at knot//net.minecraft.registry.RegistryLoader.method_45120(RegistryLoader.java:164)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at knot//net.minecraft.registry.RegistryLoader.load(RegistryLoader.java:164)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$load$33(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries(RegistryLoader.java:1057)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries$34(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zja000$fabric-registry-sync-v0$wrapIsServerCall(RegistryLoader.java:1556)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:151)
+	at knot//net.minecraft.server.SaveLoading.loadDynamicRegistryManager(SaveLoading.java:62)
+	at knot//net.minecraft.server.SaveLoading.withRegistriesLoaded(SaveLoading.java:66)
+	at knot//net.minecraft.server.SaveLoading.load(SaveLoading.java:32)
+	at knot//net.minecraft.server.Main.method_43612(Main.java:184)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1018)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1012)
+	at knot//net.minecraft.server.Main.main(Main.java:182)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.IllegalStateException: Not a JSON object: ["minecraft:cave","minecraft:cave_extra_underground","minecraft:canyon"]; Not a number: "#9c8a68"; Not a number: "#9c8a68"
+	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+	at knot//net.minecraft.registry.RegistryLoader.parseAndAdd(RegistryLoader.java:231)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:249)
+	... 21 more
+>> Errors in element rickmorty:pocket_void:
+java.lang.IllegalStateException: Failed to parse rickmorty:worldgen/biome/pocket_void.json from pack rickmorty
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:251)
+	at knot//net.minecraft.registry.RegistryLoader$Loader.loadFromResource(RegistryLoader.java:96)
+	at knot//net.minecraft.registry.RegistryLoader.method_56514(RegistryLoader.java:151)
+	at knot//net.minecraft.registry.RegistryLoader.method_45120(RegistryLoader.java:164)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at knot//net.minecraft.registry.RegistryLoader.load(RegistryLoader.java:164)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$load$33(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries(RegistryLoader.java:1057)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries$34(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zja000$fabric-registry-sync-v0$wrapIsServerCall(RegistryLoader.java:1556)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:151)
+	at knot//net.minecraft.server.SaveLoading.loadDynamicRegistryManager(SaveLoading.java:62)
+	at knot//net.minecraft.server.SaveLoading.withRegistriesLoaded(SaveLoading.java:66)
+	at knot//net.minecraft.server.SaveLoading.load(SaveLoading.java:32)
+	at knot//net.minecraft.server.Main.method_43612(Main.java:184)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1018)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1012)
+	at knot//net.minecraft.server.Main.main(Main.java:182)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.IllegalStateException: Not a JSON object: ["minecraft:cave","minecraft:cave_extra_underground","minecraft:canyon"]; Not a number: "#1a1a20"; Not a number: "#1a1a20"
+	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+	at knot//net.minecraft.registry.RegistryLoader.parseAndAdd(RegistryLoader.java:231)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:249)
+	... 21 more
+> Errors in registry minecraft:worldgen/placed_feature:
+>> Errors in element rickmorty:alien_crystal_vein:
+java.lang.IllegalStateException: Failed to parse rickmorty:worldgen/placed_feature/alien_crystal_vein.json from pack rickmorty
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:251)
+	at knot//net.minecraft.registry.RegistryLoader$Loader.loadFromResource(RegistryLoader.java:96)
+	at knot//net.minecraft.registry.RegistryLoader.method_56514(RegistryLoader.java:151)
+	at knot//net.minecraft.registry.RegistryLoader.method_45120(RegistryLoader.java:164)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at knot//net.minecraft.registry.RegistryLoader.load(RegistryLoader.java:164)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$load$33(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries(RegistryLoader.java:1057)
+	at knot//net.minecraft.registry.RegistryLoader.mixinextras$bridge$wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries$34(RegistryLoader.java)
+	at knot//net.minecraft.registry.RegistryLoader.wrapOperation$zja000$fabric-registry-sync-v0$wrapIsServerCall(RegistryLoader.java:1556)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:151)
+	at knot//net.minecraft.server.SaveLoading.loadDynamicRegistryManager(SaveLoading.java:62)
+	at knot//net.minecraft.server.SaveLoading.withRegistriesLoaded(SaveLoading.java:66)
+	at knot//net.minecraft.server.SaveLoading.load(SaveLoading.java:32)
+	at knot//net.minecraft.server.Main.method_43612(Main.java:184)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1018)
+	at knot//net.minecraft.util.Util.waitAndApply(Util.java:1012)
+	at knot//net.minecraft.server.Main.main(Main.java:182)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.IllegalStateException: Failed to parse either. First: No key below_top in MapLike[{"type":"minecraft:uniform","max_exclusive":{"absolute":64},"min_inclusive":{"absolute":-60}}]; No key above_bottom in MapLike[{"type":"minecraft:uniform","max_exclusive":{"absolute":64},"min_inclusive":{"absolute":-60}}]; No key absolute in MapLike[{"type":"minecraft:uniform","max_exclusive":{"absolute":64},"min_inclusive":{"absolute":-60}}]; Second: No key max_inclusive in MapLike[{"type":"minecraft:uniform","max_exclusive":{"absolute":64},"min_inclusive":{"absolute":-60}}]
+	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+	at knot//net.minecraft.registry.RegistryLoader.parseAndAdd(RegistryLoader.java:231)
+	at knot//net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:249)
+	... 21 more
 
-> Configure project :
-Fabric Loom: 1.10.5
-
-> Task :compileJava
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method carve(ChunkRegion,long,NoiseConfig,BiomeAccess,StructureAccessor,Chunk,Carver) in ChunkGenerator
-public class RMChunkGenerator extends ChunkGenerator {
-       ^
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:180: error: method does not override or implement a method from a supertype
-	@Override
-	^
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-2 errors
-
-> Task :compileJava FAILED
-
-[Incubating] Problems report is available at: file:///home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/build/reports/problems/problems-report.html
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':compileJava'.
-> Compilation failed; see the compiler output below.
-  Note: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:180: error: method does not override or implement a method from a supertype
-  	@Override
-  	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method carve(ChunkRegion,long,NoiseConfig,BiomeAccess,StructureAccessor,Chunk,Carver) in ChunkGenerator
-  public class RMChunkGenerator extends ChunkGenerator {
-         ^
-  2 errors
-
-* Try:
-> Check your code and dependencies to fix the compilation error(s)
-> Run with --scan to get full insights.
-
-BUILD FAILED in 8s
-1 actionable task: 1 executed
+[15:35:26] [main/WARN] (Minecraft) Failed to load datapacks, can't proceed with server load. You can either fix your datapacks or reset to vanilla with --safeMode
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Failed to load registries due to above errors
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at knot/net.minecraft.server.Main.main(Main.java:229) [minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.10.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.10.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) [fabric-loader-0.16.10.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+Caused by: java.lang.IllegalStateException: Failed to load registries due to above errors
+	at knot/net.minecraft.registry.RegistryLoader.load(RegistryLoader.java:181) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.registry.RegistryLoader.mixinextras$bridge$load$33(RegistryLoader.java) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.registry.RegistryLoader.wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries(RegistryLoader.java:1057) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.registry.RegistryLoader.mixinextras$bridge$wrapOperation$zdi000$fabric-resource-conditions-api-v1$captureRegistries$34(RegistryLoader.java) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.registry.RegistryLoader.wrapOperation$zja000$fabric-registry-sync-v0$wrapIsServerCall(RegistryLoader.java:1556) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.registry.RegistryLoader.loadFromResource(RegistryLoader.java:151) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.server.SaveLoading.loadDynamicRegistryManager(SaveLoading.java:62) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.server.SaveLoading.withRegistriesLoaded(SaveLoading.java:66) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.server.SaveLoading.load(SaveLoading.java:32) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.server.Main.method_43612(Main.java:184) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.util.Util.waitAndApply(Util.java:1018) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.util.Util.waitAndApply(Util.java:1012) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at knot/net.minecraft.server.Main.main(Main.java:182) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	... 4 more
