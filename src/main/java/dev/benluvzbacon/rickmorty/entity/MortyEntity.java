@@ -11,7 +11,6 @@ import dev.benluvzbacon.rickmorty.registry.ModSounds;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.RangedAttackMob;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -38,7 +37,7 @@ import java.util.UUID;
  * Follows Rick around. Can be befriended with a Simple Wafer, after which he tags
  * along with you instead.
  */
-public class MortyEntity extends PathAwareEntity implements RangedAttackMob {
+public class MortyEntity extends PathAwareEntity {
 	@Nullable
 	private UUID trustedPlayer;
 	private int panicSoundCooldown;

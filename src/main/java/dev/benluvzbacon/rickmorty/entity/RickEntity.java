@@ -8,7 +8,6 @@ import dev.benluvzbacon.rickmorty.entity.projectile.EnergyBoltEntity;
 import dev.benluvzbacon.rickmorty.registry.ModSounds;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.RangedAttackMob;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -28,7 +27,7 @@ import net.minecraft.world.World;
  * Smarter than the average mob: ranged portal-bolt combat, strafing, teleports out of
  * danger, deploys security drones when a fight drags on, and never walks into lava.
  */
-public class RickEntity extends PathAwareEntity implements RangedAttackMob {
+public class RickEntity extends PathAwareEntity {
 	private int droneCooldown;
 
 	public RickEntity(EntityType<? extends PathAwareEntity> type, World world) {

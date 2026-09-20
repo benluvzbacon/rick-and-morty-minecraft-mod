@@ -4,8 +4,6 @@ import dev.benluvzbacon.rickmorty.entity.projectile.EnergyBoltEntity;
 import dev.benluvzbacon.rickmorty.registry.ModSounds;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.RangedAttackMob;
-import net.minecraft.entity.ai.RangedAttack;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -25,7 +23,7 @@ import java.util.UUID;
  * Citadel security drone. Keeps the peace by vaporizing monsters and anyone who
  * starts trouble. Rick can commandeer them mid-fight.
  */
-public class SecurityBotEntity extends PathAwareEntity implements RangedAttackMob {
+public class SecurityBotEntity extends PathAwareEntity {
 	@Nullable
 	private UUID ownerUuid;
 	private int lifespan = -1; // -1 = permanent citadel unit

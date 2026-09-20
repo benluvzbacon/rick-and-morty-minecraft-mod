@@ -4,7 +4,6 @@ import dev.benluvzbacon.rickmorty.entity.projectile.EnergyBoltEntity;
 import dev.benluvzbacon.rickmorty.registry.ModSounds;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.RangedAttackMob;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -19,7 +18,7 @@ import net.minecraft.world.World;
  * A knot of unstable portal energy drifting through the pocket dimension.
  * Floats around, hums, fires slow anomaly bolts, and flickers when hit.
  */
-public class PortalAnomalyEntity extends MobEntity implements RangedAttackMob {
+public class PortalAnomalyEntity extends MobEntity {
 	private int driftCooldown;
 	private int attackCooldown;
 

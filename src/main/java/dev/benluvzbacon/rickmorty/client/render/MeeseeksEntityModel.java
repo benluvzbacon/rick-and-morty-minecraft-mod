@@ -3,6 +3,8 @@ package dev.benluvzbacon.rickmorty.client.render;
 import dev.benluvzbacon.rickmorty.RickMortyMod;
 import dev.benluvzbacon.rickmorty.entity.MeeseeksEntity;
 import net.minecraft.client.model.*;
+import net.minecraft.client.render.VertexConsumer;
+import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.util.math.MathHelper;
