@@ -1,203 +1,203 @@
 ===== SELF TEST RESULTS =====
 
 ===== SERVER LOG (tail) =====
-  location: class PortalAnomalyEntityModel
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-	                   ^
-  symbol:   class MatrixStack
-  location: class AbominationEntityModel
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-	                                         ^
-  symbol:   class VertexConsumer
-  location: class AbominationEntityModel
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-	                   ^
-  symbol:   class MatrixStack
-  location: class RickEntityModel
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-	                                         ^
-  symbol:   class VertexConsumer
-  location: class RickEntityModel
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-	                   ^
-  symbol:   class MatrixStack
-  location: class MortyEntityModel
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-	                                         ^
-  symbol:   class VertexConsumer
-  location: class MortyEntityModel
-31 errors
-
-> Task :compileJava FAILED
-
-[Incubating] Problems report is available at: file:///home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/build/reports/problems/problems-report.html
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':compileJava'.
-> Compilation failed; see the compiler output below.
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:31: error: cannot find symbol
-  public class RickEntity extends PathAwareEntity implements RangedAttackMob {
-                                                             ^
-    symbol: class RangedAttackMob
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:41: error: cannot find symbol
-  public class MortyEntity extends PathAwareEntity implements RangedAttackMob {
-                                                              ^
-    symbol: class RangedAttackMob
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:22: error: cannot find symbol
-  public class PortalAnomalyEntity extends MobEntity implements RangedAttackMob {
-                                                                ^
-    symbol: class RangedAttackMob
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:28: error: cannot find symbol
-  public class SecurityBotEntity extends PathAwareEntity implements RangedAttackMob {
-                                                                    ^
-    symbol: class RangedAttackMob/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:11: error: cannot find symbol
-  import net.minecraft.entity.mob.RangedAttackMob;
-                                 ^
-    symbol:   class RangedAttackMob
-    location: package net.minecraft.entity.mob
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:14: error: cannot find symbol
-  import net.minecraft.entity.mob.RangedAttackMob;
-                                 ^
-    symbol:   class RangedAttackMob
-    location: package net.minecraft.entity.mob
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:7: error: cannot find symbol
-  import net.minecraft.entity.mob.RangedAttackMob;
-                                 ^
-    symbol:   class RangedAttackMob
-    location: package net.minecraft.entity.mob
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:7: error: cannot find symbol
-  import net.minecraft.entity.mob.RangedAttackMob;
-                                 ^
-    symbol:   class RangedAttackMob
-    location: package net.minecraft.entity.mob
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:8: error: cannot find symbol
-  import net.minecraft.entity.ai.RangedAttack;
-                                ^
-    symbol:   class RangedAttack
-    location: package net.minecraft.entity.ai
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class EnergyBoltEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class EnergyBoltEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class MeeseeksEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class MeeseeksEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class CronenbergEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class CronenbergEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class AlienCrawlerEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class AlienCrawlerEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class ParasiteEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class ParasiteEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/GazorpianEntityModel.java:75: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class GazorpianEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/GazorpianEntityModel.java:75: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class GazorpianEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/SecurityBotEntityModel.java:51: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class SecurityBotEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/SecurityBotEntityModel.java:51: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class SecurityBotEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/PortalAnomalyEntityModel.java:68: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class PortalAnomalyEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/PortalAnomalyEntityModel.java:68: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class PortalAnomalyEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class AbominationEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class AbominationEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class RickEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class RickEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                   ^
-    symbol:   class MatrixStack
-    location: class MortyEntityModel
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-  	                                         ^
-    symbol:   class VertexConsumer
-    location: class MortyEntityModel
-  31 errors
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/ScannerItem.java:45: error: cannot find symbol
+  		if (world instanceof ServerWorld) {
+  		                     ^
+    symbol:   class ServerWorld
+    location: class ScannerItem/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:61: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:91: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:164: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/AlienCrawlerEntity.java:42: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/boss/AbominationEntity.java:179: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:82: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:94: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/GazorpianEntity.java:44: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/ParasiteEntity.java:45: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/ParasiteEntity.java:54: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:70: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:180: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:191: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:259: error: method does not override or implement a method from a supertype
+  	@Override
+  	^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/effect/DimensionalInstabilityEffect.java:25: error: method does not override or implement a method from a supertype
+  	@Override
+  	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:63: error: cannot find symbol
+  		return getWorld().getEntity(ownerUuid) instanceof LivingEntity living ? living : null;
+  		                 ^
+    symbol:   method getEntity(@org.jetbrains.annotations.Nullable UUID)
+    location: class World
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/screen/RickWorkbenchScreenHandler.java:72: error: cannot find symbol
+  		inventory.addListener(inv -> updateResult());
+  		         ^
+    symbol:   method addListener((inv)->upd[...]ult())
+    location: variable inventory of type Inventory
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:70: error: cannot find symbol
+  		jaw.pitch = Math.max(0, MathHelper.sin(animationProgress * 1.3f)) * 0.5f + (entity.isHostile() ? 0.35f : 0);
+  		                                                                                  ^
+    symbol:   method isHostile()
+    location: variable entity of type ParasiteEntity
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: cannot find symbol
+  		return checkType(type, ModBlockEntities.PORTAL_BLOCK_ENTITY, PortalBlockEntity::tick);
+  		       ^
+    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PortalBlockEntity>,PortalBloc[...]:tick)
+    location: class PortalBlock
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: cannot find symbol
+  		return checkType(type, ModBlockEntities.PLUMBUS_MACHINE_ENTITY, PlumbusMachineBlockEntity::tick);
+  		       ^
+    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PlumbusMachineBlockEntity>,PlumbusMac[...]:tick)
+    location: class PlumbusMachineBlock
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: cannot find symbol
+  		return checkType(type, ModBlockEntities.ALIEN_REACTOR_ENTITY, AlienReactorBlockEntity::tick);
+  		       ^
+    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<AlienReactorBlockEntity>,AlienReact[...]:tick)
+    location: class AlienReactorBlock
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: cannot find symbol
+  		return checkType(type, ModBlockEntities.UNSTABLE_PORTAL_ENTITY, UnstablePortalBlockEntity::tick);
+  		       ^
+    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<UnstablePortalBlockEntity>,UnstablePo[...]:tick)
+    location: class UnstablePortalBlock
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/registry/ModEntities.java:128: error: cannot find symbol
+  		BiomeModifications.addSpawn(BiomeSelectors.includeForKey(
+  		                                          ^
+    symbol:   method includeForKey(RegistryKey<Biome>)
+    location: class BiomeSelectors
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/test/SelfTest.java:356: error: cannot find symbol
+  			world.setDifficulty(Difficulty.NORMAL);
+  			     ^
+    symbol:   method setDifficulty(Difficulty)
+    location: variable world of type ServerWorld/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:42: error: incompatible types: PortalAnomalyEntity cannot be converted to PathAwareEntity
+  		this.targetSelector.add(1, new RevengeGoal(this));
+  		                                           ^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:48: error: incompatible types: SecurityBotEntity cannot be converted to RangedAttackMob
+  		this.goalSelector.add(2, new ProjectileAttackGoal(this, 1.1, 40, 18.0f));
+  		                                                  ^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/recipe/WorkbenchRecipe.java:119: error: incompatible types: cannot infer type-variable(s) O
+  				ItemStack.CODEC.fieldOf("result").forGetter(WorkbenchRecipe::getResult)
+  				                                           ^
+      (argument mismatch; invalid method reference
+        incompatible types: Object cannot be converted to WrapperLookup)
+    where O,A are type-variables:
+      O extends Object declared in method <O>forGetter(Function<O,A>)
+      A extends Object declared in class MapCodec
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:64: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.MEESEEKS, Renderers.MeeseeksEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        MeeseeksEntityRenderer(Context) is not public in MeeseeksEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:65: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.CRONENBERG_MUTANT, Renderers.CronenbergEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        CronenbergEntityRenderer(Context) is not public in CronenbergEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:66: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.ALIEN_CRAWLER, Renderers.AlienCrawlerEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        AlienCrawlerEntityRenderer(Context) is not public in AlienCrawlerEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:67: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.PARASITE, Renderers.ParasiteEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        ParasiteEntityRenderer(Context) is not public in ParasiteEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:68: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.GAZORPIAN_BRUTE, Renderers.GazorpianEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        GazorpianEntityRenderer(Context) is not public in GazorpianEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:69: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.SECURITY_BOT, Renderers.SecurityBotEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        SecurityBotEntityRenderer(Context) is not public in SecurityBotEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:70: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.PORTAL_ANOMALY, Renderers.PortalAnomalyEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        PortalAnomalyEntityRenderer(Context) is not public in PortalAnomalyEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:71: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.INTERDIMENSIONAL_ABOMINATION, Renderers.AbominationEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        AbominationEntityRenderer(Context) is not public in AbominationEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:72: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.ENERGY_BOLT, Renderers.EnergyBoltEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        EnergyBoltEntityRenderer(Context) is not public in EnergyBoltEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:73: error: incompatible types: cannot infer type-variable(s) E
+  		EntityRendererRegistry.register(ModEntities.GRAPNEL, Renderers.GrapnelEntityRenderer::new);
+  		                               ^
+      (argument mismatch; invalid constructor reference
+        GrapnelEntityRenderer(Context) is not public in GrapnelEntityRenderer; cannot be accessed from outside package)
+    where E is a type-variable:
+      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMFeatures.java:174: error: incompatible types: StructureWorldAccess cannot be converted to World
+  		PortalBlockEntity portal = PortalBlock.place(world, center, PortalBlock.PortalColor.PURPLE);
+  		                                             ^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:121: error: incompatible types: HitResult cannot be converted to BlockHitResult
+  		BlockHitResult hit = user.raycast(16, 0, false);
+  		                                 ^/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method getDebugHudText(List<String>,NoiseConfig,BlockPos) in ChunkGenerator
+  public class RMChunkGenerator extends ChunkGenerator {
+         ^
+  62 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
 > Run with --scan to get full insights.
 
-BUILD FAILED in 8s
+BUILD FAILED in 10s
 1 actionable task: 1 executed
