@@ -219,18 +219,6 @@ public class SelfTest {
 			fake.setSneaking(false);
 			check("portal gun use accepted", result.getResult().isAccepted(), "accepted hit=" + diag);
 
-			// direct placement sanity (bypasses aim): place 2 blocks north manually
-			boolean directPlaceWins = false;
-			try {
-				BlockPos dp = base.north(2).up();
-				if (overworld.getBlockState(dp).isAir()) {
-					PortalBlockEntity direct = dev.benluvzbacon.rickmorty.portal.PortalBlock.place(overworld, dp, dev.benluvzbacon.rickmorty.portal.PortalBlock.PortalColor.PURPLE);
-					directPlaceWins = direct != null && overworld.getBlockState(dp).isOf(ModBlocks.PORTAL_BLOCK);
-				}
-			} catch (Throwable t) {
-				directPlaceMessage = t.toString();
-			}
-
 			// a portal block should exist around the fake player
 			boolean foundPortal = false;
 			for (BlockPos p : BlockPos.iterate(base.add(-6, -3, -6), base.add(6, 5, 6))) {
@@ -240,8 +228,7 @@ public class SelfTest {
 					break;
 				}
 			}
-			check("portal block placed", foundPortal, "portal near base; directPlace=" + directPlaceWins +
-					(directPlaceWins ? "" : " err=" + directPlaceMessage));
+			check("portal block placed", foundPortal, "portal near base");
 
 			if (foundPortal && overworld.getBlockEntity(portalPos) instanceof PortalBlockEntity portal) {
 				check("portal targets alien dimension",
@@ -399,8 +386,6 @@ public class SelfTest {
 				spawn.getX(), spawn.getZ());
 		return new BlockPos(spawn.getX(), y, spawn.getZ());
 	}
-
-	private static String directPlaceMessage = "-";
 
 	private static void check(String name, boolean ok, String detail) {
 		if (ok) {
