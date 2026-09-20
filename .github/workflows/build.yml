@@ -52,8 +52,10 @@ jobs:
           } > dist/BUILD_INFO.txt
           {
             echo "===== BUILD LOG (errors & tail) ====="
-            grep -n -i "error:\|FAILED\|Cannot\|Exception" build_console.log | head -80
-            echo "-----"
+            grep -n "error:" build_console.log | head -40
+            echo "----- full javac diagnostics -----"
+            grep -n -A3 "error:" build_console.log | head -240
+            echo "----- tail -----"
             tail -n 60 build_console.log
           } > dist/build_report.txt 2>&1 || true
           {
