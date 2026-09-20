@@ -1,62 +1,80 @@
 {
-  "portal.teleport": {
-    "subtitle": "sound.rickmorty.portal.teleport",
-    "sounds": [
-      "rickmorty:portal/teleport"
-    ]
-  },
-  "portal.open": {
-    "subtitle": "sound.rickmorty.portal.open",
+  "portal_open": {
+    "subtitle": "sound.rickmorty.portal_open",
     "sounds": [
       "rickmorty:portal/open"
     ]
   },
-  "portal.close": {
-    "subtitle": "sound.rickmorty.portal.close",
+  "portal_close": {
+    "subtitle": "sound.rickmorty.portal_close",
     "sounds": [
       "rickmorty:portal/close"
     ]
   },
-  "portal.storm": {
-    "subtitle": "sound.rickmorty.portal.storm",
-    "sounds": [
-      "rickmorty:portal/storm"
-    ]
-  },
-  "gun.zap": {
-    "subtitle": "sound.rickmorty.gun.zap",
+  "portal_shoot": {
+    "subtitle": "sound.rickmorty.portal_shoot",
     "sounds": [
       "rickmorty:gun/zap"
     ]
   },
-  "gun.charge": {
-    "subtitle": "sound.rickmorty.gun.charge",
+  "teleport": {
+    "subtitle": "sound.rickmorty.teleport",
     "sounds": [
-      "rickmorty:gun/charge"
+      "rickmorty:portal/teleport"
     ]
   },
-  "gun.fail": {
-    "subtitle": "sound.rickmorty.gun.fail",
+  "blaster_shot": {
+    "subtitle": "sound.rickmorty.blaster_shot",
     "sounds": [
-      "rickmorty:gun/fail"
+      "rickmorty:gun/zap"
     ]
   },
-  "workbench.craft": {
-    "subtitle": "sound.rickmorty.workbench.craft",
+  "laser_shot": {
+    "subtitle": "sound.rickmorty.laser_shot",
     "sounds": [
-      "rickmorty:workbench/craft"
+      "rickmorty:laser/shot"
     ]
   },
-  "boss.roar": {
-    "subtitle": "sound.rickmorty.boss.roar",
+  "plasma_shot": {
+    "subtitle": "sound.rickmorty.plasma_shot",
     "sounds": [
-      "rickmorty:boss/roar"
+      "rickmorty:plasma/fire"
     ]
   },
-  "boss.retreat": {
-    "subtitle": "sound.rickmorty.boss.retreat",
+  "shrink_zap": {
+    "subtitle": "sound.rickmorty.shrink_zap",
     "sounds": [
-      "rickmorty:boss/retreat"
+      "rickmorty:shrink/zap"
+    ]
+  },
+  "meeseeks_spawn": {
+    "subtitle": "sound.rickmorty.meeseeks_spawn",
+    "sounds": [
+      "rickmorty:meeseeks/spawn"
+    ]
+  },
+  "meeseeks_poof": {
+    "subtitle": "sound.rickmorty.meeseeks_poof",
+    "sounds": [
+      "rickmorty:meeseeks/poof"
+    ]
+  },
+  "rick_ambient": {
+    "subtitle": "sound.rickmorty.rick_ambient",
+    "sounds": [
+      "rickmorty:rick/burp"
+    ]
+  },
+  "rick_teleport": {
+    "subtitle": "sound.rickmorty.rick_teleport",
+    "sounds": [
+      "rickmorty:portal/teleport"
+    ]
+  },
+  "morty_panic": {
+    "subtitle": "sound.rickmorty.morty_panic",
+    "sounds": [
+      "rickmorty:morty/panic"
     ]
   },
   "anomaly": {
@@ -65,28 +83,52 @@
       "rickmorty:anomaly"
     ]
   },
-  "laser.shot": {
-    "subtitle": "sound.rickmorty.laser.shot",
+  "boss_roar": {
+    "subtitle": "sound.rickmorty.boss_roar",
     "sounds": [
-      "rickmorty:laser/shot"
+      "rickmorty:boss/roar"
     ]
   },
-  "plasma.fire": {
-    "subtitle": "sound.rickmorty.plasma.fire",
+  "boss_hurt": {
+    "subtitle": "sound.rickmorty.boss_hurt",
     "sounds": [
-      "rickmorty:plasma/fire"
+      "rickmorty:boss/hurt"
     ]
   },
-  "shrink.zap": {
-    "subtitle": "sound.rickmorty.shrink.zap",
+  "reactor_hum": {
+    "subtitle": "sound.rickmorty.reactor_hum",
     "sounds": [
-      "rickmorty:shrink/zap"
+      "rickmorty:machine/reactor_hum"
     ]
   },
-  "grapnel.release": {
-    "subtitle": "sound.rickmorty.grapnel.release",
+  "scanner_ping": {
+    "subtitle": "sound.rickmorty.scanner_ping",
     "sounds": [
-      "rickmorty:grapnel/release"
+      "rickmorty:scanner/ping"
+    ]
+  },
+  "grapple_fire": {
+    "subtitle": "sound.rickmorty.grapple_fire",
+    "sounds": [
+      "rickmorty:grapple/fire"
+    ]
+  },
+  "grapple_hit": {
+    "subtitle": "sound.rickmorty.grapple_hit",
+    "sounds": [
+      "rickmorty:grapple/hit"
+    ]
+  },
+  "portal_storm": {
+    "subtitle": "sound.rickmorty.portal_storm",
+    "sounds": [
+      "rickmorty:portal/storm"
+    ]
+  },
+  "workbench_craft": {
+    "subtitle": "sound.rickmorty.workbench_craft",
+    "sounds": [
+      "rickmorty:workbench/craft"
     ]
   }
 }

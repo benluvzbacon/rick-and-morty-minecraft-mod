@@ -87,6 +87,10 @@ public class PortalGunItem extends Item {
 
 	public static UUID getGunId(ItemStack stack) {
 		NbtCompound nbt = tag(stack);
+		if (!nbt.containsUuid("gunId")) {
+			nbt.putUuid("gunId", UUID.randomUUID());
+			tag(stack, nbt);
+		}
 		UUID id;
 		if (nbt.containsUuid("gunId")) {
 			id = nbt.getUuid("gunId");
