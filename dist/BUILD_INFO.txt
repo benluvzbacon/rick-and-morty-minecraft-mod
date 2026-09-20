@@ -1,0 +1,2 @@
+GRADLE_EXIT=
+2026-09-20T12:26:41Z build finished
