@@ -8,56 +8,52 @@ Daemon will be stopped at the end of the build
 Fabric Loom: 1.10.5
 
 > Task :compileJava
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:163: error: method does not override or implement a method from a supertype
-	@Override
-	^
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/ParasiteEntity.java:54: error: method does not override or implement a method from a supertype
-	@Override
-	^
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: cannot find symbol
-		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PORTAL_BLOCK_ENTITY, PortalBlockEntity::tick);
-		                                          ^
-  symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PortalBlockEntity>,PortalBloc[...]:tick)
-  location: class BlockWithEntity
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
+		        ^
   where T is a type-variable:
     T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateNoise(Blender,NoiseConfig,StructureAccessor,Chunk) in ChunkGenerator
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
+		                    ^
+  where T is a type-variable:
+    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
 public class RMChunkGenerator extends ChunkGenerator {
        ^
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/effect/DimensionalInstabilityEffect.java:24: error: method does not override or implement a method from a supertype
-	@Override
-	^
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: cannot find symbol
-		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PLUMBUS_MACHINE_ENTITY, PlumbusMachineBlockEntity::tick);
-		                                          ^
-  symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PlumbusMachineBlockEntity>,PlumbusMac[...]:tick)
-  location: class BlockWithEntity
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
+		        ^
   where T is a type-variable:
     T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: cannot find symbol
-		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.ALIEN_REACTOR_ENTITY, AlienReactorBlockEntity::tick);
-		                                          ^
-  symbol:   method checkType(BlockEntityType<T>,BlockEntityType<AlienReactorBlockEntity>,AlienReact[...]:tick)
-  location: class BlockWithEntity
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
+		                    ^
   where T is a type-variable:
     T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: cannot find symbol
-		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.UNSTABLE_PORTAL_ENTITY, UnstablePortalBlockEntity::tick);
-		                                          ^
-  symbol:   method checkType(BlockEntityType<T>,BlockEntityType<UnstablePortalBlockEntity>,UnstablePo[...]:tick)
-  location: class BlockWithEntity
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
+		        ^
   where T is a type-variable:
     T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:209: error: incompatible types: World cannot be converted to StructureWorldAccess
-		PortalBlockEntity portal = PortalBlock.place(world, pos, color);
-		                                             ^
-/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:247: error: incompatible types: World cannot be converted to StructureWorldAccess
-		PortalBlockEntity portal = PortalBlock.place(world, pos, PortalBlock.PortalColor.PURPLE);
-		                                             ^
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
+		                    ^
+  where T is a type-variable:
+    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
+		        ^
+  where T is a type-variable:
+    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
+		                    ^
+  where T is a type-variable:
+    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-10 errors
+9 errors
 
 > Task :compileJava FAILED
 
@@ -68,54 +64,53 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileJava'.
 > Compilation failed; see the compiler output below.
-  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:163: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/ParasiteEntity.java:54: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/effect/DimensionalInstabilityEffect.java:24: error: method does not override or implement a method from a supertype
-  	@Override
-  	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:209: error: incompatible types: World cannot be converted to StructureWorldAccess
-  		PortalBlockEntity portal = PortalBlock.place(world, pos, color);
-  		                                             ^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:247: error: incompatible types: World cannot be converted to StructureWorldAccess
-  		PortalBlockEntity portal = PortalBlock.place(world, pos, PortalBlock.PortalColor.PURPLE);
-  		                                             ^/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: cannot find symbol
-  		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PORTAL_BLOCK_ENTITY, PortalBlockEntity::tick);
-  		                                          ^
-    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PortalBlockEntity>,PortalBloc[...]:tick)
-    location: class BlockWithEntity
+  Note: Recompile with -Xlint:unchecked for details.Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
+  		        ^
     where T is a type-variable:
       T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: cannot find symbol
-  		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PLUMBUS_MACHINE_ENTITY, PlumbusMachineBlockEntity::tick);
-  		                                          ^
-    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PlumbusMachineBlockEntity>,PlumbusMac[...]:tick)
-    location: class BlockWithEntity
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
+  		                    ^
     where T is a type-variable:
       T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: cannot find symbol
-  		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.ALIEN_REACTOR_ENTITY, AlienReactorBlockEntity::tick);
-  		                                          ^
-    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<AlienReactorBlockEntity>,AlienReact[...]:tick)
-    location: class BlockWithEntity
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
+  		        ^
     where T is a type-variable:
       T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: cannot find symbol
-  		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.UNSTABLE_PORTAL_ENTITY, UnstablePortalBlockEntity::tick);
-  		                                          ^
-    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<UnstablePortalBlockEntity>,UnstablePo[...]:tick)
-    location: class BlockWithEntity
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
+  		                    ^
     where T is a type-variable:
-      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateNoise(Blender,NoiseConfig,StructureAccessor,Chunk) in ChunkGenerator
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
+  		        ^
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
+  		                    ^
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
+  		        ^
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
+  		                    ^
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
   public class RMChunkGenerator extends ChunkGenerator {
          ^
-  10 errors
+  9 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
 > Run with --scan to get full insights.
 
-BUILD FAILED in 7s
+BUILD FAILED in 10s
 1 actionable task: 1 executed
