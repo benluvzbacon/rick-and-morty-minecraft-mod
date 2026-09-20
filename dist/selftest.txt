@@ -1,203 +1,121 @@
 ===== SELF TEST RESULTS =====
 
 ===== SERVER LOG (tail) =====
-  		                                                    ^Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/blockentity/MeeseeksBoxBlockEntity.java:29: error: no suitable method found for create(ServerWorld,<null>,<null>,BlockPos,SpawnReason,boolean,boolean)
-  		MeeseeksEntity meeseeks = ModEntities.MEESEEKS.create(world, null, null, pos.up(), SpawnReason.TRIGGERED, true, false);
-  		                                              ^
-      method EntityType.create(ServerWorld,Consumer<MeeseeksEntity>,BlockPos,SpawnReason,boolean,boolean) is not applicable
-        (actual and formal argument lists differ in length)
-      method EntityType.create(World) is not applicable
-        (actual and formal argument lists differ in length)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/blockentity/UnstablePortalBlockEntity.java:67: error: no suitable method found for create(ServerWorld,<null>,<null>,BlockPos,SpawnReason,boolean,boolean)
-  		Entity entity = type.create(world, null, null, pos.up(), SpawnReason.EVENT, true, false);
-  		                    ^
-      method EntityType.create(ServerWorld,Consumer<CAP#1>,BlockPos,SpawnReason,boolean,boolean) is not applicable
-        (actual and formal argument lists differ in length)
-      method EntityType.create(World) is not applicable
-        (actual and formal argument lists differ in length)
-    where CAP#1 is a fresh type-variable:
-      CAP#1 extends Entity from capture of ?/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/blockentity/FluidTankBlockEntity.java:54: error: cannot find symbol
-  				world.setBlockState(pos, state.with(dev.benluvzbacon.rickmorty.block.FluidTankBlock.LEVEL, level), BlockState.NOTIFY_ALL);
-  				                                                                                                             ^
-    symbol:   variable NOTIFY_ALL
-    location: class BlockState
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/blockentity/AlienReactorBlockEntity.java:97: error: cannot find symbol
-  				world.setBlockState(pos, state.with(AlienReactorBlock.ACTIVE, true), BlockState.NOTIFY_ALL);
-  				                                                                               ^
-    symbol:   variable NOTIFY_ALL
-    location: class BlockState
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/registry/ModBlocks.java:84: error: cannot find symbol
-  		PORTAL_BLOCK = reg("portal_block", new PortalBlock(AbstractBlock.Settings.create()
-  		                                       ^
-    symbol:   class PortalBlock
-    location: class ModBlocks
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/registry/ModEntities.java:99: error: cannot find symbol
-  		SpawnRestriction.register(PORTAL_ANOMALY, SpawnLocationTypes.IN_AIR,
-  		                                                            ^
-    symbol:   variable IN_AIR
-    location: interface SpawnLocationTypes
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/ScannerItem.java:45: error: cannot find symbol
-  		if (world instanceof ServerWorld) {
-  		                     ^
-    symbol:   class ServerWorld
-    location: class ScannerItem/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:61: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:91: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:164: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:70: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/AlienCrawlerEntity.java:42: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/boss/AbominationEntity.java:179: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:81: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:93: error: method does not override or implement a method from a supertype
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.10.5
+
+> Task :compileJava
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:163: error: method does not override or implement a method from a supertype
+	@Override
+	^
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/ParasiteEntity.java:54: error: method does not override or implement a method from a supertype
+	@Override
+	^
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: cannot find symbol
+		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PORTAL_BLOCK_ENTITY, PortalBlockEntity::tick);
+		                                          ^
+  symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PortalBlockEntity>,PortalBloc[...]:tick)
+  location: class BlockWithEntity
+  where T is a type-variable:
+    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateNoise(Blender,NoiseConfig,StructureAccessor,Chunk) in ChunkGenerator
+public class RMChunkGenerator extends ChunkGenerator {
+       ^
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/effect/DimensionalInstabilityEffect.java:24: error: method does not override or implement a method from a supertype
+	@Override
+	^
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: cannot find symbol
+		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PLUMBUS_MACHINE_ENTITY, PlumbusMachineBlockEntity::tick);
+		                                          ^
+  symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PlumbusMachineBlockEntity>,PlumbusMac[...]:tick)
+  location: class BlockWithEntity
+  where T is a type-variable:
+    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: cannot find symbol
+		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.ALIEN_REACTOR_ENTITY, AlienReactorBlockEntity::tick);
+		                                          ^
+  symbol:   method checkType(BlockEntityType<T>,BlockEntityType<AlienReactorBlockEntity>,AlienReact[...]:tick)
+  location: class BlockWithEntity
+  where T is a type-variable:
+    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: cannot find symbol
+		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.UNSTABLE_PORTAL_ENTITY, UnstablePortalBlockEntity::tick);
+		                                          ^
+  symbol:   method checkType(BlockEntityType<T>,BlockEntityType<UnstablePortalBlockEntity>,UnstablePo[...]:tick)
+  location: class BlockWithEntity
+  where T is a type-variable:
+    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:209: error: incompatible types: World cannot be converted to StructureWorldAccess
+		PortalBlockEntity portal = PortalBlock.place(world, pos, color);
+		                                             ^
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:247: error: incompatible types: World cannot be converted to StructureWorldAccess
+		PortalBlockEntity portal = PortalBlock.place(world, pos, PortalBlock.PortalColor.PURPLE);
+		                                             ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+10 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:163: error: method does not override or implement a method from a supertype
   	@Override
   	^
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/ParasiteEntity.java:54: error: method does not override or implement a method from a supertype
   	@Override
   	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:180: error: method does not override or implement a method from a supertype
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/effect/DimensionalInstabilityEffect.java:24: error: method does not override or implement a method from a supertype
   	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:191: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:259: error: method does not override or implement a method from a supertype
-  	@Override
-  	^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/effect/DimensionalInstabilityEffect.java:25: error: method does not override or implement a method from a supertype
-  	@Override
-  	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: cannot find symbol
-  		return checkType(type, ModBlockEntities.PORTAL_BLOCK_ENTITY, PortalBlockEntity::tick);
-  		       ^
+  	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:209: error: incompatible types: World cannot be converted to StructureWorldAccess
+  		PortalBlockEntity portal = PortalBlock.place(world, pos, color);
+  		                                             ^
+  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:247: error: incompatible types: World cannot be converted to StructureWorldAccess
+  		PortalBlockEntity portal = PortalBlock.place(world, pos, PortalBlock.PortalColor.PURPLE);
+  		                                             ^/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: cannot find symbol
+  		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PORTAL_BLOCK_ENTITY, PortalBlockEntity::tick);
+  		                                          ^
     symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PortalBlockEntity>,PortalBloc[...]:tick)
-    location: class PortalBlock
+    location: class BlockWithEntity
     where T is a type-variable:
       T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: cannot find symbol
-  		return checkType(type, ModBlockEntities.PLUMBUS_MACHINE_ENTITY, PlumbusMachineBlockEntity::tick);
-  		       ^
+  		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PLUMBUS_MACHINE_ENTITY, PlumbusMachineBlockEntity::tick);
+  		                                          ^
     symbol:   method checkType(BlockEntityType<T>,BlockEntityType<PlumbusMachineBlockEntity>,PlumbusMac[...]:tick)
-    location: class PlumbusMachineBlock
+    location: class BlockWithEntity
     where T is a type-variable:
       T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: cannot find symbol
-  		return checkType(type, ModBlockEntities.ALIEN_REACTOR_ENTITY, AlienReactorBlockEntity::tick);
-  		       ^
+  		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.ALIEN_REACTOR_ENTITY, AlienReactorBlockEntity::tick);
+  		                                          ^
     symbol:   method checkType(BlockEntityType<T>,BlockEntityType<AlienReactorBlockEntity>,AlienReact[...]:tick)
-    location: class AlienReactorBlock
+    location: class BlockWithEntity
     where T is a type-variable:
       T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: cannot find symbol
-  		return checkType(type, ModBlockEntities.UNSTABLE_PORTAL_ENTITY, UnstablePortalBlockEntity::tick);
-  		       ^
-    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<UnstablePortalBlockEntity>,UnstablePo[...]:tick)
-    location: class UnstablePortalBlock
-    where T is a type-variable:
-      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/registry/ModEntities.java:128: error: cannot find symbol
-  		BiomeModifications.addSpawn(BiomeSelectors.includeForKey(
+  		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.UNSTABLE_PORTAL_ENTITY, UnstablePortalBlockEntity::tick);
   		                                          ^
-    symbol:   method includeForKey(RegistryKey<Biome>)
-    location: class BiomeSelectors
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/test/SelfTest.java:356: error: cannot find symbol
-  			world.setDifficulty(Difficulty.NORMAL);
-  			     ^
-    symbol:   method setDifficulty(Difficulty)
-    location: variable world of type ServerWorld/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:64: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.MEESEEKS, Renderers.MeeseeksEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        MeeseeksEntityRenderer(Context) is not public in MeeseeksEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:65: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.CRONENBERG_MUTANT, Renderers.CronenbergEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        CronenbergEntityRenderer(Context) is not public in CronenbergEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:66: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.ALIEN_CRAWLER, Renderers.AlienCrawlerEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        AlienCrawlerEntityRenderer(Context) is not public in AlienCrawlerEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:67: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.PARASITE, Renderers.ParasiteEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        ParasiteEntityRenderer(Context) is not public in ParasiteEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:68: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.GAZORPIAN_BRUTE, Renderers.GazorpianEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        GazorpianEntityRenderer(Context) is not public in GazorpianEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:69: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.SECURITY_BOT, Renderers.SecurityBotEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        SecurityBotEntityRenderer(Context) is not public in SecurityBotEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:70: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.PORTAL_ANOMALY, Renderers.PortalAnomalyEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        PortalAnomalyEntityRenderer(Context) is not public in PortalAnomalyEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:71: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.INTERDIMENSIONAL_ABOMINATION, Renderers.AbominationEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        AbominationEntityRenderer(Context) is not public in AbominationEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:72: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.ENERGY_BOLT, Renderers.EnergyBoltEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        EnergyBoltEntityRenderer(Context) is not public in EnergyBoltEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/RickMortyClient.java:73: error: incompatible types: cannot infer type-variable(s) E
-  		EntityRendererRegistry.register(ModEntities.GRAPNEL, Renderers.GrapnelEntityRenderer::new);
-  		                               ^
-      (argument mismatch; invalid constructor reference
-        GrapnelEntityRenderer(Context) is not public in GrapnelEntityRenderer; cannot be accessed from outside package)
-    where E is a type-variable:
-      E extends Entity declared in method <E>register(EntityType<? extends E>,EntityRendererFactory<E>)
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMFeatures.java:174: error: incompatible types: StructureWorldAccess cannot be converted to World
-  		PortalBlockEntity portal = PortalBlock.place(world, center, PortalBlock.PortalColor.PURPLE);
-  		                                             ^
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/item/PortalGunItem.java:121: error: incompatible types: HitResult cannot be converted to BlockHitResult
-  		BlockHitResult hit = user.raycast(16, 0, false);
-  		                                 ^/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method getDebugHudText(List<String>,NoiseConfig,BlockPos) in ChunkGenerator
+    symbol:   method checkType(BlockEntityType<T>,BlockEntityType<UnstablePortalBlockEntity>,UnstablePo[...]:tick)
+    location: class BlockWithEntity
+    where T is a type-variable:
+      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateNoise(Blender,NoiseConfig,StructureAccessor,Chunk) in ChunkGenerator
   public class RMChunkGenerator extends ChunkGenerator {
          ^
-  41 errors
+  10 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
 > Run with --scan to get full insights.
 
-BUILD FAILED in 10s
+BUILD FAILED in 7s
 1 actionable task: 1 executed
