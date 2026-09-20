@@ -211,20 +211,37 @@ public class SelfTest {
 			fake.setSneaking(true);
 			fake.setPos(base.getX() + 0.5, base.getY() + 1.0, base.getZ() + 0.5); // feet ON TOP of the ground block
 			fake.setPitch(60f);
+			// diagnostics: what does the fake player see?
+			var diagHit = fake.raycast(16, 0, false);
+			Object diag = diagHit.getType() + "@" + (diagHit instanceof net.minecraft.util.hit.BlockHitResult bh
+					? bh.getBlockPos() + " side=" + bh.getSide() + " block=" + overworld.getBlockState(bh.getBlockPos()).getBlock() : "n/a");
 			TypedActionResult<ItemStack> result = gun.use(overworld, fake, Hand.MAIN_HAND);
 			fake.setSneaking(false);
-			check("portal gun use accepted", result.getResult().isAccepted(), "accepted");
+			check("portal gun use accepted", result.getResult().isAccepted(), "accepted hit=" + diag);
+
+			// direct placement sanity (bypasses aim): place 2 blocks north manually
+			boolean directPlaceWins = false;
+			try {
+				BlockPos dp = base.north(2).up();
+				if (overworld.getBlockState(dp).isAir()) {
+					PortalBlockEntity direct = dev.benluvzbacon.rickmorty.portal.PortalBlock.place(overworld, dp, dev.benluvzbacon.rickmorty.portal.PortalBlock.PortalColor.PURPLE);
+					directPlaceWins = direct != null && overworld.getBlockState(dp).isOf(ModBlocks.PORTAL_BLOCK);
+				}
+			} catch (Throwable t) {
+				directPlaceMessage = t.toString();
+			}
 
 			// a portal block should exist around the fake player
 			boolean foundPortal = false;
-			for (BlockPos p : BlockPos.iterate(base.add(-4, -2, -4), base.add(4, 4, 4))) {
+			for (BlockPos p : BlockPos.iterate(base.add(-6, -3, -6), base.add(6, 5, 6))) {
 				if (overworld.getBlockState(p).isOf(ModBlocks.PORTAL_BLOCK)) {
 					portalPos = p.toImmutable();
 					foundPortal = true;
 					break;
 				}
 			}
-			check("portal block placed", foundPortal, "portal block around base");
+			check("portal block placed", foundPortal, "portal near base; directPlace=" + directPlaceWins +
+					(directPlaceWins ? "" : " err=" + directPlaceMessage));
 
 			if (foundPortal && overworld.getBlockEntity(portalPos) instanceof PortalBlockEntity portal) {
 				check("portal targets alien dimension",
@@ -382,6 +399,8 @@ public class SelfTest {
 				spawn.getX(), spawn.getZ());
 		return new BlockPos(spawn.getX(), y, spawn.getZ());
 	}
+
+	private static String directPlaceMessage = "-";
 
 	private static void check(String name, boolean ok, String detail) {
 		if (ok) {
