@@ -8,8 +8,8 @@
     "fog_color": 1974308,
     "water_color": 4159204,
     "water_fog_color": 329011,
-    "grass_color": "#4d515a",
-    "foliage_color": "#4d515a",
+    "grass_color": 5067098,
+    "foliage_color": 5067098,
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
@@ -47,9 +47,11 @@
     [],
     []
   ],
-  "carvers": [
-    "minecraft:cave",
-    "minecraft:cave_extra_underground",
-    "minecraft:canyon"
-  ]
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  }
 }
