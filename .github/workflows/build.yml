@@ -25,42 +25,66 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon --stacktrace
+        id: gradle
+        run: |
+          ./gradlew build --no-daemon --stacktrace > build_console.log 2>&1
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
 
       - name: Prepare run dir
+        if: always()
         run: mkdir -p run && echo "eula=true" > run/eula.txt
 
       - name: Run dedicated server smoke test (self test stops the server)
+        if: always() && steps.gradle.outputs.exit == '0'
         run: timeout 420 ./gradlew runServer --no-daemon > run_server_console.log 2>&1 || true
 
       - name: Collect results
+        if: always()
         run: |
           mkdir -p dist
           rm -f dist/rick-and-morty-mod-*.jar
           cp build/libs/rick-and-morty-mod-*.jar dist/ 2>/dev/null || true
           rm -f dist/*-sources.jar
           ls -la build/libs/ > dist/build_libs_listing.txt 2>&1 || true
-          echo "===== SELF TEST RESULTS =====" > dist/selftest.txt
-          grep -h "RICKMORTY-SELFTEST" run/logs/latest.log run_server_console.log 2>/dev/null >> dist/selftest.txt || true
-          echo "" >> dist/selftest.txt
-          echo "===== SERVER LOG (tail) =====" >> dist/selftest.txt
-          tail -n 250 run/logs/latest.log 2>/dev/null >> dist/selftest.txt || tail -n 250 run_server_console.log >> dist/selftest.txt || true
-          echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) build finished" > dist/BUILD_INFO.txt
+          {
+            echo "GRADLE_EXIT=${{ steps.gradle.outputs.exit }}"
+            echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) build finished"
+          } > dist/BUILD_INFO.txt
+          {
+            echo "===== BUILD LOG (errors & tail) ====="
+            grep -n -i "error:\|FAILED\|Cannot\|Exception" build_console.log | head -80
+            echo "-----"
+            tail -n 60 build_console.log
+          } > dist/build_report.txt 2>&1 || true
+          {
+            echo "===== SELF TEST RESULTS ====="
+            grep -h "RICKMORTY-SELFTEST" run/logs/latest.log run_server_console.log 2>/dev/null
+            echo ""
+            echo "===== SERVER LOG (tail) ====="
+            tail -n 200 run/logs/latest.log 2>/dev/null || tail -n 200 run_server_console.log 2>/dev/null
+          } > dist/selftest.txt 2>&1 || true
 
       - name: Upload artifacts
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: rickmorty-build
           path: |
             dist/
             run/logs/latest.log
+            build_console.log
           if-no-files-found: ignore
           retention-days: 14
 
       - name: Commit results back to branch
+        if: always()
         run: |
           git config user.name "rickmorty-ci[bot]"
           git config user.email "rickmorty-ci[bot]@users.noreply.github.com"
           git add dist/
           git commit -m "CI: build & smoke test results [skip ci]" || echo "nothing to commit"
           git push origin HEAD:arena/01a0beb4-rick-and-morty-minecraft-mod
+
+      - name: Fail job if build failed
+        if: steps.gradle.outputs.exit != '0'
+        run: exit 1
