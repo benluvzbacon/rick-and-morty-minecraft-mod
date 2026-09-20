@@ -36,8 +36,7 @@ public class RickWorkbenchScreen extends HandledScreen<RickWorkbenchScreenHandle
 	protected void drawForeground(DrawContext context, int mouseX, int mouseY) {
 		super.drawForeground(context, mouseX, mouseY);
 		int tier = handler.getTier();
-		context.drawText(this.textRenderer, Text.translatable("gui.rickmorty.workbench.tier", tier).formatted(
-				tier >= 3 ? 0x55FFFF : (tier == 2 ? 0xFF55FF : 0xAAAAAA)
-		), 8, 6, 0xFFFFFF, false);
+		int color = tier >= 3 ? 0x55FFFF : (tier == 2 ? 0xFF55FF : 0xAAAAAA);
+		context.drawText(this.textRenderer, Text.translatable("gui.rickmorty.workbench.tier", tier), 8, 6, color, false);
 	}
 }

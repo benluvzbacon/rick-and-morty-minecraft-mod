@@ -5,10 +5,10 @@ import dev.benluvzbacon.rickmorty.entity.MeeseeksEntity;
 import dev.benluvzbacon.rickmorty.entity.PortalAnomalyEntity;
 import dev.benluvzbacon.rickmorty.entity.SecurityBotEntity;
 import dev.benluvzbacon.rickmorty.entity.boss.AbominationEntity;
-import dev.benluvzbacon.rickmorty.entity.boss.CronenbergEntity;
-import dev.benluvzbacon.rickmorty.entity.mob.AlienCrawlerEntity;
-import dev.benluvzbacon.rickmorty.entity.mob.GazorpianBruteEntity;
-import dev.benluvzbacon.rickmorty.entity.mob.ParasiteEntity;
+import dev.benluvzbacon.rickmorty.entity.CronenbergEntity;
+import dev.benluvzbacon.rickmorty.entity.AlienCrawlerEntity;
+import dev.benluvzbacon.rickmorty.entity.GazorpianEntity;
+import dev.benluvzbacon.rickmorty.entity.ParasiteEntity;
 import dev.benluvzbacon.rickmorty.entity.projectile.EnergyBoltEntity;
 import dev.benluvzbacon.rickmorty.entity.projectile.GrapnelEntity;
 import net.minecraft.client.render.OverlayTexture;
@@ -55,12 +55,12 @@ public static class ParasiteEntityRenderer extends MobEntityRenderer<ParasiteEnt
 	@Override public Identifier getTexture(ParasiteEntity entity) { return TEXTURE; }
 }
 
-public static class GazorpianEntityRenderer extends MobEntityRenderer<GazorpianBruteEntity, GazorpianEntityModel> {
+public static class GazorpianEntityRenderer extends MobEntityRenderer<GazorpianEntity, GazorpianEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/gazorpian.png");
 	GazorpianEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new GazorpianEntityModel(context.getPart(GazorpianEntityModel.LAYER)), 0.8f);
 	}
-	@Override public Identifier getTexture(GazorpianBruteEntity entity) { return TEXTURE; }
+	@Override public Identifier getTexture(GazorpianEntity entity) { return TEXTURE; }
 }
 
 public static class SecurityBotEntityRenderer extends MobEntityRenderer<SecurityBotEntity, SecurityBotEntityModel> {
@@ -104,8 +104,9 @@ public static class EnergyBoltEntityRenderer extends EntityRenderer<EnergyBoltEn
 		float renderedPitch = entity.prevPitch + (entity.getPitch() - entity.prevPitch) * tickDelta;
 		matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(renderedPitch));
 		VertexConsumer vc = vertexConsumers.getBuffer(RenderLayer.getEntityTranslucentEmissive(TEXTURE));
-		int rgb = entity.getKind() == EnergyBoltEntity.Kind.LASER ? 0xFFFF4444 : 0xFF39FF88;
-		model.render(matrices, vc, 0xF000F0, OverlayTexture.DEFAULT_UV, rgb);
+		boolean laser = entity.getKind() == EnergyBoltEntity.Kind.LASER;
+		model.render(matrices, vc, 0xF000F0, OverlayTexture.DEFAULT_UV,
+				laser ? 1f : 0.22f, laser ? 0.27f : 1f, laser ? 0.27f : 0.53f, 1f);
 		matrices.pop();
 	}
 
@@ -130,7 +131,7 @@ public static class GrapnelEntityRenderer extends EntityRenderer<GrapnelEntity> 
 		matrices.push();
 		matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180.0f - yaw));
 		VertexConsumer vc = vertexConsumers.getBuffer(RenderLayer.getEntityCutout(TEXTURE));
-		model.render(matrices, vc, light, OverlayTexture.DEFAULT_UV, 0xFF555555);
+		model.render(matrices, vc, light, OverlayTexture.DEFAULT_UV, 0.33f, 0.33f, 0.33f, 1f);
 		matrices.pop();
 	}
 

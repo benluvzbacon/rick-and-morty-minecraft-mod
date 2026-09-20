@@ -1,14 +1,14 @@
 package dev.benluvzbacon.rickmorty.client.render;
 
 import dev.benluvzbacon.rickmorty.RickMortyMod;
-import dev.benluvzbacon.rickmorty.entity.mob.GazorpianBruteEntity;
+import dev.benluvzbacon.rickmorty.entity.GazorpianEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.util.math.MathHelper;
 
 /** Slab-built horned brute. Practically the entire upper body is deltoids. */
-public class GazorpianEntityModel extends EntityModel<GazorpianBruteEntity> {
+public class GazorpianEntityModel extends EntityModel<GazorpianEntity> {
 	public static final EntityModelLayer LAYER = new EntityModelLayer(RickMortyMod.id("gazorpian_brute"), "main");
 
 	private final ModelPart root;
@@ -54,7 +54,7 @@ public class GazorpianEntityModel extends EntityModel<GazorpianBruteEntity> {
 	}
 
 	@Override
-	public void setAngles(GazorpianBruteEntity entity, float limbAngle, float limbDistance,
+	public void setAngles(GazorpianEntity entity, float limbAngle, float limbDistance,
 						  float animationProgress, float headYaw, float headPitch) {
 		head.yaw = headYaw * (MathHelper.PI / 180f) * 0.6f;
 		head.pitch = headPitch * (MathHelper.PI / 180f) * 0.5f;
@@ -72,7 +72,7 @@ public class GazorpianEntityModel extends EntityModel<GazorpianBruteEntity> {
 	}
 
 	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-		root.render(matrices, vertices, light, overlay, color);
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+		root.render(matrices, vertices, light, overlay, red, green, blue, alpha);
 	}
 }

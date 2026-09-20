@@ -17,6 +17,7 @@ public class MeeseeksEntityModel extends EntityModel<MeeseeksEntity> {
 	private final ModelPart rightArm;
 	private final ModelPart leftLeg;
 	private final ModelPart rightLeg;
+	private int desperation;
 
 	public MeeseeksEntityModel(ModelPart root) {
 		this.root = root;
@@ -57,6 +58,7 @@ public class MeeseeksEntityModel extends EntityModel<MeeseeksEntity> {
 	@Override
 	public void setAngles(MeeseeksEntity entity, float limbAngle, float limbDistance,
 						  float animationProgress, float headYaw, float headPitch) {
+		this.desperation = entity.getDesperation();
 		head.yaw = headYaw * (MathHelper.PI / 180f);
 		head.pitch = headPitch * (MathHelper.PI / 180f);
 		rightLeg.pitch = MathHelper.cos(limbAngle * 0.6662f) * 1.3f * limbDistance;
@@ -73,13 +75,15 @@ public class MeeseeksEntityModel extends EntityModel<MeeseeksEntity> {
 	}
 
 	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-		int d = entity instanceof MeeseeksEntity m ? m.getDesperation() : 0;
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay,
+					   float red, float green, float blue, float alpha) {
+		int d = this.desperation;
+		if (d < 0) d = 0;
+		if (d > 2) d = 2;
 		// fresh blue -> agitated red
-		int r = 0x64 + d * 60;
-		int g = 0xA8 - d * 40;
-		int b = 0xE8 - d * 30;
-		int tinted = (color & 0xFF000000) | (Math.min(255, r) << 16) | (Math.max(80, g) << 8) | Math.max(80, b);
-		root.render(matrices, vertices, light, overlay, tinted);
+		float r = 1f;
+		float g = Math.max(0.3f, 1f - d * 0.25f);
+		float b = Math.max(0.3f, 1f - d * 0.2f);
+		root.render(matrices, vertices, light, overlay, r, g, b, alpha);
 	}
 }

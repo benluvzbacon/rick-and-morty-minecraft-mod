@@ -1,7 +1,7 @@
 package dev.benluvzbacon.rickmorty.client.render;
 
 import dev.benluvzbacon.rickmorty.RickMortyMod;
-import dev.benluvzbacon.rickmorty.entity.mob.AlienCrawlerEntity;
+import dev.benluvzbacon.rickmorty.entity.AlienCrawlerEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
@@ -58,7 +58,7 @@ public class AlienCrawlerEntityModel extends EntityModel<AlienCrawlerEntity> {
 	}
 
 	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-		root.render(matrices, vertices, light, overlay, color);
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+		root.render(matrices, vertices, light, overlay, red, green, blue, alpha);
 	}
 }

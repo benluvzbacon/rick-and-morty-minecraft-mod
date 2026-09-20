@@ -177,6 +177,10 @@ public class AbominationEntity extends HostileEntity {
 	}
 
 	@Override
+	public boolean isRoaring() {
+		return attackCooldown <= 20;
+	}
+
 	public boolean isPersistent() {
 		return true;
 	}

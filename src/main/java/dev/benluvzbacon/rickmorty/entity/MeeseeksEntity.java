@@ -74,6 +74,13 @@ public class MeeseeksEntity extends PathAwareEntity {
 		return task;
 	}
 
+	/** 0 = fresh, 1 = strained, 2 = EXISTENCE IS PAIN */
+	public int getDesperation() {
+		float total = Math.max(1f, ModConfig.get().meeseeksLifetimeSeconds * 20f);
+		float gone = 1f - remainingLife / total;
+		return gone < 0.35f ? 0 : (gone < 0.8f ? 1 : 2);
+	}
+
 	public void setTask(Task task) {
 		this.task = task;
 	}

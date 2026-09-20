@@ -187,7 +187,7 @@ public class DimensionalEventManager {
 				}
 				if (sw.getTime() % 30 == 0) {
 					for (ServerPlayerEntity player : sw.getPlayers(p -> p.getBlockPos().isWithinDistance(anomaly.center(), anomaly.radius()))) {
-						player.addStatusEffect(new StatusEffectInstance(ModStatusEffects.DIMENSIONAL_INSTABILITY,
+						player.addStatusEffect(new StatusEffectInstance(ModStatusEffects.DIMENSIONAL_INSTABILITY_ENTRY,
 								200, 0, true, false, true));
 					}
 				}
