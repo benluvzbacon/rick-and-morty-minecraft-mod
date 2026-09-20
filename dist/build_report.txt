@@ -2,7 +2,7 @@
 17:FAILURE: Build failed with an exception.
 38:* Exception is:
 39:org.gradle.api.plugins.UnknownPluginException: Plugin [id: 'net.fabricmc.fabric-loom', version: '1.10-SNAPSHOT'] was not found in any of the following sources:
-209:BUILD FAILED in 11s
+209:BUILD FAILED in 13s
 -----
 	at org.gradle.internal.buildtree.DefaultBuildTreeContext.execute(DefaultBuildTreeContext.java:40)
 	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.lambda$execute$0(BuildTreeLifecycleBuildActionExecutor.java:71)
@@ -63,4 +63,4 @@
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 
 
-BUILD FAILED in 11s
+BUILD FAILED in 13s
