@@ -30,10 +30,6 @@
 158:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
 163:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
 168:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-175:> Task :compileJava FAILED
-179:FAILURE: Build failed with an exception.
-182:Execution failed for task ':compileJava'.
-183:> Compilation failed; see the compiler output below.
 184:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:31: error: cannot find symbol
 188:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:41: error: cannot find symbol
 192:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:22: error: cannot find symbol
@@ -43,44 +39,279 @@
 209:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:7: error: cannot find symbol
 214:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:7: error: cannot find symbol
 219:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:8: error: cannot find symbol
-224:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
-229:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
-234:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
-239:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
-244:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
-249:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
-254:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
-259:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
-264:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
-269:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
-274:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/GazorpianEntityModel.java:75: error: cannot find symbol
-279:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/GazorpianEntityModel.java:75: error: cannot find symbol
-284:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/SecurityBotEntityModel.java:51: error: cannot find symbol
-289:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/SecurityBotEntityModel.java:51: error: cannot find symbol
-294:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/PortalAnomalyEntityModel.java:68: error: cannot find symbol
-299:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/PortalAnomalyEntityModel.java:68: error: cannot find symbol
-304:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
-309:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
-314:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-319:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-324:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-329:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-340:* Exception is:
-341:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileJava'.
-351:	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
-403:Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
-404:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:31: error: cannot find symbol
-408:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:41: error: cannot find symbol
-412:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:22: error: cannot find symbol
-416:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:28: error: cannot find symbol
-419:  symbol: class RangedAttackMob/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:11: error: cannot find symbol
-424:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:14: error: cannot find symbol
-429:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:7: error: cannot find symbol
-434:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:7: error: cannot find symbol
-439:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:8: error: cannot find symbol
-444:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
 grep: write error: Broken pipe
------
+----- full javac diagnostics -----
+22:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:11: error: cannot find symbol
+23-import net.minecraft.entity.mob.RangedAttackMob;
+24-                               ^
+25-  symbol:   class RangedAttackMob
+--
+27:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:31: error: cannot find symbol
+28-public class RickEntity extends PathAwareEntity implements RangedAttackMob {
+29-                                                           ^
+30-  symbol: class RangedAttackMob
+31:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:14: error: cannot find symbol
+32-import net.minecraft.entity.mob.RangedAttackMob;
+33-                               ^
+34-  symbol:   class RangedAttackMob
+--
+36:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:41: error: cannot find symbol
+37-public class MortyEntity extends PathAwareEntity implements RangedAttackMob {
+38-                                                            ^
+39-  symbol: class RangedAttackMob
+40:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:7: error: cannot find symbol
+41-import net.minecraft.entity.mob.RangedAttackMob;
+42-                               ^
+43-  symbol:   class RangedAttackMob
+--
+45:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:22: error: cannot find symbol
+46-public class PortalAnomalyEntity extends MobEntity implements RangedAttackMob {
+47-                                                              ^
+48-  symbol: class RangedAttackMob
+49:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:7: error: cannot find symbol
+50-import net.minecraft.entity.mob.RangedAttackMob;
+51-                               ^
+52-  symbol:   class RangedAttackMob
+--
+54:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:8: error: cannot find symbol
+55-import net.minecraft.entity.ai.RangedAttack;
+56-                              ^
+57-  symbol:   class RangedAttack
+--
+59:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:28: error: cannot find symbol
+60-public class SecurityBotEntity extends PathAwareEntity implements RangedAttackMob {
+61-                                                                  ^
+62-  symbol: class RangedAttackMob
+63:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
+64-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+65-	                   ^
+66-  symbol:   class MatrixStack
+--
+68:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
+69-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+70-	                                         ^
+71-  symbol:   class VertexConsumer
+--
+73:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
+74-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+75-	                   ^
+76-  symbol:   class MatrixStack
+--
+78:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
+79-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+80-	                                         ^
+81-  symbol:   class VertexConsumer
+--
+83:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
+84-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+85-	                   ^
+86-  symbol:   class MatrixStack
+--
+88:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
+89-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+90-	                                         ^
+91-  symbol:   class VertexConsumer
+--
+93:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
+94-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+95-	                   ^
+96-  symbol:   class MatrixStack
+--
+98:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
+99-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+100-	                                         ^
+101-  symbol:   class VertexConsumer
+--
+103:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
+104-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+105-	                   ^
+106-  symbol:   class MatrixStack
+--
+108:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
+109-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+110-	                                         ^
+111-  symbol:   class VertexConsumer
+--
+113:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/GazorpianEntityModel.java:75: error: cannot find symbol
+114-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+115-	                   ^
+116-  symbol:   class MatrixStack
+--
+118:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/GazorpianEntityModel.java:75: error: cannot find symbol
+119-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+120-	                                         ^
+121-  symbol:   class VertexConsumer
+--
+123:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/SecurityBotEntityModel.java:51: error: cannot find symbol
+124-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+125-	                   ^
+126-  symbol:   class MatrixStack
+--
+128:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/SecurityBotEntityModel.java:51: error: cannot find symbol
+129-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+130-	                                         ^
+131-  symbol:   class VertexConsumer
+--
+133:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/PortalAnomalyEntityModel.java:68: error: cannot find symbol
+134-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+135-	                   ^
+136-  symbol:   class MatrixStack
+--
+138:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/PortalAnomalyEntityModel.java:68: error: cannot find symbol
+139-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+140-	                                         ^
+141-  symbol:   class VertexConsumer
+--
+143:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
+144-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+145-	                   ^
+146-  symbol:   class MatrixStack
+--
+148:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
+149-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+150-	                                         ^
+151-  symbol:   class VertexConsumer
+--
+153:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
+154-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+155-	                   ^
+156-  symbol:   class MatrixStack
+--
+158:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
+159-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+160-	                                         ^
+161-  symbol:   class VertexConsumer
+--
+163:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
+164-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+165-	                   ^
+166-  symbol:   class MatrixStack
+--
+168:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
+169-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+170-	                                         ^
+171-  symbol:   class VertexConsumer
+--
+184:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:31: error: cannot find symbol
+185-  public class RickEntity extends PathAwareEntity implements RangedAttackMob {
+186-                                                             ^
+187-    symbol: class RangedAttackMob
+188:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:41: error: cannot find symbol
+189-  public class MortyEntity extends PathAwareEntity implements RangedAttackMob {
+190-                                                              ^
+191-    symbol: class RangedAttackMob
+192:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:22: error: cannot find symbol
+193-  public class PortalAnomalyEntity extends MobEntity implements RangedAttackMob {
+194-                                                                ^
+195-    symbol: class RangedAttackMob
+196:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:28: error: cannot find symbol
+197-  public class SecurityBotEntity extends PathAwareEntity implements RangedAttackMob {
+198-                                                                    ^
+199:    symbol: class RangedAttackMob/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:11: error: cannot find symbol
+200-  import net.minecraft.entity.mob.RangedAttackMob;
+201-                                 ^
+202-    symbol:   class RangedAttackMob
+--
+204:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:14: error: cannot find symbol
+205-  import net.minecraft.entity.mob.RangedAttackMob;
+206-                                 ^
+207-    symbol:   class RangedAttackMob
+--
+209:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:7: error: cannot find symbol
+210-  import net.minecraft.entity.mob.RangedAttackMob;
+211-                                 ^
+212-    symbol:   class RangedAttackMob
+--
+214:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:7: error: cannot find symbol
+215-  import net.minecraft.entity.mob.RangedAttackMob;
+216-                                 ^
+217-    symbol:   class RangedAttackMob
+--
+219:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:8: error: cannot find symbol
+220-  import net.minecraft.entity.ai.RangedAttack;
+221-                                ^
+222-    symbol:   class RangedAttack
+--
+224:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
+225-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+226-  	                   ^
+227-    symbol:   class MatrixStack
+--
+229:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
+230-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+231-  	                                         ^
+232-    symbol:   class VertexConsumer
+--
+234:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
+235-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+236-  	                   ^
+237-    symbol:   class MatrixStack
+--
+239:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
+240-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+241-  	                                         ^
+242-    symbol:   class VertexConsumer
+--
+244:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
+245-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+246-  	                   ^
+247-    symbol:   class MatrixStack
+--
+249:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
+250-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+251-  	                                         ^
+252-    symbol:   class VertexConsumer
+--
+254:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
+255-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+256-  	                   ^
+257-    symbol:   class MatrixStack
+--
+259:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
+260-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+261-  	                                         ^
+262-    symbol:   class VertexConsumer
+--
+264:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
+265-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+266-  	                   ^
+267-    symbol:   class MatrixStack
+--
+269:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
+270-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+271-  	                                         ^
+272-    symbol:   class VertexConsumer
+grep: write error: Broken pipe
+----- tail -----
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:40)
 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
@@ -106,38 +337,9 @@ grep: write error: Broken pipe
 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
-	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
-	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
-	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
-	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
-	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
-	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
-	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
-	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
-	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
-	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
-	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 
 
-BUILD FAILED in 48s
+BUILD FAILED in 1m 2s
 1 actionable task: 1 executed

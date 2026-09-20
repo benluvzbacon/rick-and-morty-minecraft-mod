@@ -1,8 +1,6 @@
 ===== SELF TEST RESULTS =====
 
 ===== SERVER LOG (tail) =====
-	                                         ^
-  symbol:   class VertexConsumer
   location: class PortalAnomalyEntityModel
 /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
 	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
@@ -35,6 +33,8 @@
   symbol:   class VertexConsumer
   location: class MortyEntityModel
 31 errors
+
+> Task :compileJava FAILED
 
 [Incubating] Problems report is available at: file:///home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/build/reports/problems/problems-report.html
 
@@ -199,5 +199,5 @@ Execution failed for task ':compileJava'.
 > Check your code and dependencies to fix the compilation error(s)
 > Run with --scan to get full insights.
 
-BUILD FAILED in 7s
+BUILD FAILED in 8s
 1 actionable task: 1 executed
