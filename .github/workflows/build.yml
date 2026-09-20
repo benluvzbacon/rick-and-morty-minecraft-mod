@@ -24,6 +24,22 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
+      - name: Probe maven metadata (diagnostics)
+        if: always()
+        run: |
+          mkdir -p dist
+          {
+            echo "=== fabric-loom plugin marker ==="
+            curl -s https://maven.fabricmc.net/net/fabricmc/fabric-loom/fabric-loom.gradle.plugin/maven-metadata.xml | grep -o "<version>[^<]*" | sed 's/<version>//' | tr '\n' ' '
+            echo; echo "=== yarn latest 1.21.1 ==="
+            curl -s https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml | grep -o "1.21.1+build.[0-9]*" | tr '\n' ' '
+            echo; echo "=== loader latest ==="
+            curl -s https://maven.fabricmc.net/net/fabricmc/fabric-loader/maven-metadata.xml | grep -o "<version>0.1[0-9][^<]*" | sed 's/<version>//' | tr '\n' ' '
+            echo; echo "=== fabric-api 1.21.1 ==="
+            curl -s https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-api/maven-metadata.xml | grep -o "[0-9.]*+1.21.1" | tr '\n' ' '
+            echo
+          } > dist/maven_probe.txt 2>&1
+
       - name: Build with Gradle
         id: gradle
         run: |
