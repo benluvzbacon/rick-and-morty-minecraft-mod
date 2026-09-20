@@ -1,5 +1,5 @@
 total 1232
-drwxr-xr-x  2 runner runner   4096 Sep 20 15:55 .
-drwxr-xr-x 11 runner runner   4096 Sep 20 15:55 ..
--rw-r--r--  1 runner runner 544681 Sep 20 15:55 rick-and-morty-mod-1.0.0-sources.jar
--rw-r--r--  1 runner runner 705319 Sep 20 15:55 rick-and-morty-mod-1.0.0.jar
+drwxr-xr-x  2 runner runner   4096 Sep 20 15:59 .
+drwxr-xr-x 11 runner runner   4096 Sep 20 15:59 ..
+-rw-r--r--  1 runner runner 544751 Sep 20 15:59 rick-and-morty-mod-1.0.0-sources.jar
+-rw-r--r--  1 runner runner 705421 Sep 20 15:59 rick-and-morty-mod-1.0.0.jar
