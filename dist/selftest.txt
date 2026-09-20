@@ -1,102 +1,112 @@
 ===== SELF TEST RESULTS =====
-[15:45:46] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness armed
-[15:46:00] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL portal block placed (portal block around base)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST SUMMARY: fail=1 pass=42
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS items registered (count)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS blocks registered (count)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS entity types registered (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS sounds registered (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun fluid api (add 500)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: minecraft:overworld (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in minecraft:overworld (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:alien_planet (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:alien_planet (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:citadel (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:citadel (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:cronenberg_world (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:cronenberg_world (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:pocket_dimension (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:pocket_dimension (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: portal cost (>0)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: gun capacity (>=1000)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick attributes (hp=60)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty armed (blaster equipped)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS zombie spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS alien world reachable (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun use accepted (accepted)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL portal block placed (portal block around base)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS travel home works (returned)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS extreme coords handled (no crash)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS clamped inside border (within border)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS not suffocating (breathable)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS pocket arrival has floor/platform (floor)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench tier 1 baseline (tier=1)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench recipes loaded from datapack (count=12)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tiered recipes present (has t2+)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS quantum computer boosts tier (tier=2)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS recipe result available (result rickmorty:portal_gun)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tank -> gun fluid transfer (gun=500 tank=500)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks summoned by box (summon)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks entity alive (task set)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS box cooldown after use (cooldown)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss spawned (phase 1)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase system (phase 2 at 50%)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase 3 (phase 3 at 20%)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal storm spawns rifts (placed=3)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness shutting server down
-[15:45:46] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness armed
-[15:46:00] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL portal block placed (portal block around base)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST SUMMARY: fail=1 pass=42
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS items registered (count)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS blocks registered (count)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS entity types registered (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS sounds registered (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun fluid api (add 500)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: minecraft:overworld (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in minecraft:overworld (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:alien_planet (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:alien_planet (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:citadel (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:citadel (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:cronenberg_world (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:cronenberg_world (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:pocket_dimension (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:pocket_dimension (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: portal cost (>0)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: gun capacity (>=1000)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick attributes (hp=60)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty armed (blaster equipped)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS zombie spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS alien world reachable (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun use accepted (accepted)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL portal block placed (portal block around base)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS travel home works (returned)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS extreme coords handled (no crash)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS clamped inside border (within border)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS not suffocating (breathable)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS pocket arrival has floor/platform (floor)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench tier 1 baseline (tier=1)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench recipes loaded from datapack (count=12)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tiered recipes present (has t2+)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS quantum computer boosts tier (tier=2)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS recipe result available (result rickmorty:portal_gun)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tank -> gun fluid transfer (gun=500 tank=500)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks summoned by box (summon)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks entity alive (task set)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS box cooldown after use (cooldown)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss spawned (phase 1)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase system (phase 2 at 50%)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase 3 (phase 3 at 20%)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal storm spawns rifts (placed=3)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness shutting server down
+[15:49:22] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness armed
+[15:49:33] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL portal targets alien dimension (target)
+[15:49:33] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL player travelled to alien dimension (world now minecraft:overworld)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST SUMMARY: fail=2 pass=45
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS items registered (count)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS blocks registered (count)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS entity types registered (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS sounds registered (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun fluid api (add 500)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: minecraft:overworld (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in minecraft:overworld (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:alien_planet (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:alien_planet (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:citadel (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:citadel (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:cronenberg_world (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:cronenberg_world (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:pocket_dimension (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:pocket_dimension (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: portal cost (>0)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: gun capacity (>=1000)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick attributes (hp=60)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty armed (blaster equipped)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS zombie spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS alien world reachable (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun use accepted (accepted hit=MISS@BlockPos{x=3, y=76, z=23} side=north block=Block{minecraft:air})
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal block placed (portal near base; directPlace=true)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL portal targets alien dimension (target)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL player travelled to alien dimension (world now minecraft:overworld)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS arrival is breathable (feet==Block{minecraft:air})
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS arrival inside world border (border)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS travel home works (returned)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS extreme coords handled (no crash)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS clamped inside border (within border)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS not suffocating (breathable)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS pocket arrival has floor/platform (floor)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench tier 1 baseline (tier=1)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench recipes loaded from datapack (count=12)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tiered recipes present (has t2+)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS quantum computer boosts tier (tier=2)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS recipe result available (result rickmorty:portal_gun)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tank -> gun fluid transfer (gun=500 tank=500)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks summoned by box (summon)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks entity alive (task set)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS box cooldown after use (cooldown)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss spawned (phase 1)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase system (phase 2 at 50%)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase 3 (phase 3 at 20%)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal storm spawns rifts (placed=3)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness shutting server down
+[15:49:22] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness armed
+[15:49:33] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL portal targets alien dimension (target)
+[15:49:33] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL player travelled to alien dimension (world now minecraft:overworld)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST SUMMARY: fail=2 pass=45
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS items registered (count)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS blocks registered (count)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS entity types registered (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS sounds registered (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun fluid api (add 500)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: minecraft:overworld (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in minecraft:overworld (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:alien_planet (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:alien_planet (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:citadel (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:citadel (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:cronenberg_world (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:cronenberg_world (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:pocket_dimension (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:pocket_dimension (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: portal cost (>0)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: gun capacity (>=1000)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick attributes (hp=60)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty armed (blaster equipped)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS zombie spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS alien world reachable (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun use accepted (accepted hit=MISS@BlockPos{x=3, y=76, z=23} side=north block=Block{minecraft:air})
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal block placed (portal near base; directPlace=true)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL portal targets alien dimension (target)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL player travelled to alien dimension (world now minecraft:overworld)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS arrival is breathable (feet==Block{minecraft:air})
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS arrival inside world border (border)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS travel home works (returned)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS extreme coords handled (no crash)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS clamped inside border (within border)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS not suffocating (breathable)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS pocket arrival has floor/platform (floor)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench tier 1 baseline (tier=1)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench recipes loaded from datapack (count=12)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tiered recipes present (has t2+)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS quantum computer boosts tier (tier=2)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS recipe result available (result rickmorty:portal_gun)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tank -> gun fluid transfer (gun=500 tank=500)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks summoned by box (summon)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks entity alive (task set)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS box cooldown after use (cooldown)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss spawned (phase 1)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase system (phase 2 at 50%)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase 3 (phase 3 at 20%)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal storm spawns rifts (placed=3)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness shutting server down
 
 ===== SERVER LOG (tail) =====
-[15:45:31] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.10
-[15:45:31] [main/INFO] (FabricLoader) Loading 43 mods:
+[15:49:10] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.10
+[15:49:10] [main/INFO] (FabricLoader) Loading 43 mods:
 	- fabric-api 0.116.0+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
 	- fabric-api-lookup-api-v1 1.6.71+b559734419
@@ -140,22 +150,22 @@
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
 	- rickmorty 1.0.0
-[15:45:31] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/runner/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[15:45:32] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[15:45:32] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[15:45:32] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:rick
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:morty
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:meeseeks
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:cronenberg_mutant
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:alien_crawler
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:parasite
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:gazorpian_brute
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:security_bot
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:portal_anomaly
-[15:45:38] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:interdimensional_abomination
-[15:45:38] [main/INFO] (rickmorty) [RickMorty] Initialized. Wubba lubba dub dub!
-[15:45:38] [main/ERROR] (Minecraft) Failed to load properties from file: server.properties
+[15:49:10] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/runner/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[15:49:10] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[15:49:10] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[15:49:10] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:rick
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:morty
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:meeseeks
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:cronenberg_mutant
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:alien_crawler
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:parasite
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:gazorpian_brute
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:security_bot
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:portal_anomaly
+[15:49:15] [main/ERROR] (Minecraft) No data fixer registered for rickmorty:interdimensional_abomination
+[15:49:15] [main/INFO] (rickmorty) [RickMorty] Initialized. Wubba lubba dub dub!
+[15:49:15] [main/ERROR] (Minecraft) Failed to load properties from file: server.properties
 java.nio.file.NoSuchFileException: server.properties
 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
@@ -173,9 +183,9 @@ java.nio.file.NoSuchFileException: server.properties
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.10.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) [fabric-loader-0.16.10.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[15:45:38] [main/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[15:45:39] [main/INFO] (Minecraft) No existing world data, creating new world
-[15:45:39] [main/ERROR] (Minecraft) Parsing error loading recipe rickmorty:laser_gun
+[15:49:15] [main/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:49:16] [main/INFO] (Minecraft) No existing world data, creating new world
+[15:49:16] [main/ERROR] (Minecraft) Parsing error loading recipe rickmorty:laser_gun
 com.google.gson.JsonParseException: Invalid pattern: too many columns, 3 is maximum
 	at knot/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar:?]
 	at knot/net.minecraft.recipe.RecipeManager.apply(RecipeManager.java:62) ~[minecraft-merged-a5fe06f283-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
@@ -191,88 +201,91 @@ com.google.gson.JsonParseException: Invalid pattern: too many columns, 3 is maxi
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.10.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) [fabric-loader-0.16.10.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[15:45:40] [main/INFO] (Minecraft) Loaded 1327 recipes
-[15:45:40] [main/INFO] (Minecraft) Loaded 1412 advancements
-[15:45:40] [main/INFO] (BiomeModificationImpl) Applied 129 biome modifications to 57 of 68 new biomes in 11.78 ms
-[15:45:40] [Server thread/INFO] (Minecraft) Starting minecraft server version 1.21.1
-[15:45:40] [Server thread/INFO] (Minecraft) Loading properties
-[15:45:40] [Server thread/INFO] (Minecraft) Default game type: SURVIVAL
-[15:45:40] [Server thread/INFO] (Minecraft) Generating keypair
-[15:45:40] [Server thread/INFO] (Minecraft) Starting Minecraft server on *:25565
-[15:45:40] [Server thread/INFO] (Minecraft) Using epoll channel type
-[15:45:40] [Server thread/INFO] (Minecraft) Preparing level "world"
-[15:45:44] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[15:45:44] [Worker-Main-3/INFO] (Minecraft) Preparing spawn area: 2%
-[15:45:44] [Worker-Main-2/INFO] (Minecraft) Preparing spawn area: 2%
-[15:45:45] [Worker-Main-3/INFO] (Minecraft) Preparing spawn area: 4%
-[15:45:45] [Worker-Main-3/INFO] (Minecraft) Preparing spawn area: 18%
-[15:45:46] [Worker-Main-1/INFO] (Minecraft) Preparing spawn area: 51%
-[15:45:46] [Worker-Main-3/INFO] (Minecraft) Preparing spawn area: 51%
-[15:45:46] [Server thread/INFO] (Minecraft) Time elapsed: 2690 ms
-[15:45:46] [Server thread/INFO] (Minecraft) Done (6.105s)! For help, type "help"
-[15:45:46] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness armed
-[15:45:55] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2335ms or 46 ticks behind
-[15:46:00] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL portal block placed (portal block around base)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST SUMMARY: fail=1 pass=42
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS items registered (count)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS blocks registered (count)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS entity types registered (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS sounds registered (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun fluid api (add 500)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: minecraft:overworld (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in minecraft:overworld (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:alien_planet (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:alien_planet (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:citadel (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:citadel (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:cronenberg_world (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:cronenberg_world (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:pocket_dimension (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:pocket_dimension (chunk)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: portal cost (>0)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: gun capacity (>=1000)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick attributes (hp=60)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty armed (blaster equipped)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS zombie spawned (alive)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS alien world reachable (non-null)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun use accepted (accepted)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL portal block placed (portal block around base)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS travel home works (returned)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS extreme coords handled (no crash)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS clamped inside border (within border)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS not suffocating (breathable)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS pocket arrival has floor/platform (floor)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench tier 1 baseline (tier=1)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench recipes loaded from datapack (count=12)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tiered recipes present (has t2+)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS quantum computer boosts tier (tier=2)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS recipe result available (result rickmorty:portal_gun)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tank -> gun fluid transfer (gun=500 tank=500)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks summoned by box (summon)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks entity alive (task set)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS box cooldown after use (cooldown)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss spawned (phase 1)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase system (phase 2 at 50%)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase 3 (phase 3 at 20%)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal storm spawns rifts (placed=3)
-[15:46:07] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness shutting server down
-[15:46:07] [Server thread/INFO] (Minecraft) Stopping server
-[15:46:07] [Server thread/INFO] (Minecraft) Saving players
-[15:46:07] [Server thread/INFO] (Minecraft) Saving worlds
-[15:46:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[15:46:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[15:46:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/rickmorty:citadel
-[15:46:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/rickmorty:pocket_dimension
-[15:46:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/rickmorty:cronenberg_world
-[15:46:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/rickmorty:alien_planet
-[15:46:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[15:46:21] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (world): All chunks are saved
-[15:46:21] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:46:21] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (citadel): All chunks are saved
-[15:46:21] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (pocket_dimension): All chunks are saved
-[15:46:21] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (cronenberg_world): All chunks are saved
-[15:46:21] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (alien_planet): All chunks are saved
-[15:46:21] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[15:46:21] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[15:49:16] [main/INFO] (Minecraft) Loaded 1327 recipes
+[15:49:16] [main/INFO] (Minecraft) Loaded 1412 advancements
+[15:49:17] [main/INFO] (BiomeModificationImpl) Applied 129 biome modifications to 57 of 68 new biomes in 9.463 ms
+[15:49:17] [Server thread/INFO] (Minecraft) Starting minecraft server version 1.21.1
+[15:49:17] [Server thread/INFO] (Minecraft) Loading properties
+[15:49:17] [Server thread/INFO] (Minecraft) Default game type: SURVIVAL
+[15:49:17] [Server thread/INFO] (Minecraft) Generating keypair
+[15:49:17] [Server thread/INFO] (Minecraft) Starting Minecraft server on *:25565
+[15:49:17] [Server thread/INFO] (Minecraft) Using epoll channel type
+[15:49:17] [Server thread/INFO] (Minecraft) Preparing level "world"
+[15:49:20] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[15:49:20] [Worker-Main-2/INFO] (Minecraft) Preparing spawn area: 2%
+[15:49:21] [Worker-Main-1/INFO] (Minecraft) Preparing spawn area: 2%
+[15:49:21] [Worker-Main-2/INFO] (Minecraft) Preparing spawn area: 18%
+[15:49:22] [Worker-Main-3/INFO] (Minecraft) Preparing spawn area: 22%
+[15:49:22] [Worker-Main-3/INFO] (Minecraft) Preparing spawn area: 51%
+[15:49:22] [Server thread/INFO] (Minecraft) Time elapsed: 2334 ms
+[15:49:22] [Server thread/INFO] (Minecraft) Done (5.639s)! For help, type "help"
+[15:49:22] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness armed
+[15:49:33] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL portal targets alien dimension (target)
+[15:49:33] [Server thread/ERROR] (rickmorty) RICKMORTY-SELFTEST FAIL player travelled to alien dimension (world now minecraft:overworld)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST SUMMARY: fail=2 pass=45
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS items registered (count)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS blocks registered (count)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS entity types registered (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS sounds registered (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun fluid api (add 500)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: minecraft:overworld (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in minecraft:overworld (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:alien_planet (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:alien_planet (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:citadel (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:citadel (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:cronenberg_world (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:cronenberg_world (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS dimension loaded: rickmorty:pocket_dimension (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS chunk 0,0 generated in rickmorty:pocket_dimension (chunk)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: portal cost (>0)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS config sane: gun capacity (>=1000)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS rick attributes (hp=60)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS morty armed (blaster equipped)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS zombie spawned (alive)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS alien world reachable (non-null)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal gun use accepted (accepted hit=MISS@BlockPos{x=3, y=76, z=23} side=north block=Block{minecraft:air})
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal block placed (portal near base; directPlace=true)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL portal targets alien dimension (target)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST FAIL player travelled to alien dimension (world now minecraft:overworld)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS arrival is breathable (feet==Block{minecraft:air})
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS arrival inside world border (border)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS travel home works (returned)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS extreme coords handled (no crash)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS clamped inside border (within border)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS not suffocating (breathable)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS pocket arrival has floor/platform (floor)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench tier 1 baseline (tier=1)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS workbench recipes loaded from datapack (count=12)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tiered recipes present (has t2+)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS quantum computer boosts tier (tier=2)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS recipe result available (result rickmorty:portal_gun)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS tank -> gun fluid transfer (gun=500 tank=500)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks summoned by box (summon)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS meeseeks entity alive (task set)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS box cooldown after use (cooldown)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss spawned (phase 1)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase system (phase 2 at 50%)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS boss phase 3 (phase 3 at 20%)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST PASS portal storm spawns rifts (placed=3)
+[15:49:41] [Server thread/INFO] (rickmorty) RICKMORTY-SELFTEST harness shutting server down
+[15:49:41] [Server thread/INFO] (Minecraft) Stopping server
+[15:49:41] [Server thread/INFO] (Minecraft) Saving players
+[15:49:41] [Server thread/INFO] (Minecraft) Saving worlds
+[15:49:41] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:49:44] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/rickmorty:alien_planet
+[15:49:44] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/rickmorty:cronenberg_world
+[15:49:44] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/rickmorty:citadel
+[15:49:44] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/rickmorty:pocket_dimension
+[15:49:44] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[15:49:44] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[15:49:44] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:49:44] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (alien_planet): All chunks are saved
+[15:49:44] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (cronenberg_world): All chunks are saved
+[15:49:44] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (citadel): All chunks are saved
+[15:49:44] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (pocket_dimension): All chunks are saved
+[15:49:44] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:49:44] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:49:44] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
