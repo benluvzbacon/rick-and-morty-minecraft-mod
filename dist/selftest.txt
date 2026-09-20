@@ -3,28 +3,38 @@
 ===== SERVER LOG (tail) =====
 	                                         ^
   symbol:   class VertexConsumer
+  location: class PortalAnomalyEntityModel
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+	                   ^
+  symbol:   class MatrixStack
+  location: class AbominationEntityModel
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
+	                                         ^
+  symbol:   class VertexConsumer
   location: class AbominationEntityModel
 /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
 	                   ^
   symbol:   class MatrixStack
   location: class RickEntityModel
 /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
 	                                         ^
   symbol:   class VertexConsumer
   location: class RickEntityModel
 /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
 	                   ^
   symbol:   class MatrixStack
   location: class MortyEntityModel
 /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
 	                                         ^
   symbol:   class VertexConsumer
   location: class MortyEntityModel
-33 errors
+31 errors
 
 [Incubating] Problems report is available at: file:///home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/build/reports/problems/problems-report.html
 
@@ -49,155 +59,145 @@ Execution failed for task ':compileJava'.
   public class SecurityBotEntity extends PathAwareEntity implements RangedAttackMob {
                                                                     ^
     symbol: class RangedAttackMob/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/RickEntity.java:11: error: cannot find symbol
-  import net.minecraft.entity.RangedAttackMob;
-                             ^
+  import net.minecraft.entity.mob.RangedAttackMob;
+                                 ^
     symbol:   class RangedAttackMob
-    location: package net.minecraft.entity
+    location: package net.minecraft.entity.mob
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/MortyEntity.java:14: error: cannot find symbol
-  import net.minecraft.entity.RangedAttackMob;
-                             ^
+  import net.minecraft.entity.mob.RangedAttackMob;
+                                 ^
     symbol:   class RangedAttackMob
-    location: package net.minecraft.entity
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/ai/FollowRickGoal.java:56: error: cannot find symbol
-  	private interface LivingEntityAlive extends net.minecraft.entity.EntityPredicate {
-  	                                                                ^
-    symbol:   class EntityPredicate
-    location: package net.minecraft.entity
-  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/ai/FollowRickGoal.java:57: error: cannot find symbol
-  		EntityPredicate ALIVE = entity -> entity instanceof net.minecraft.entity.LivingEntity le && le.isAlive();
-  		^
-    symbol:   class EntityPredicate
-    location: interface LivingEntityAlive
+    location: package net.minecraft.entity.mob
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/PortalAnomalyEntity.java:7: error: cannot find symbol
-  import net.minecraft.entity.RangedAttackMob;
-                             ^
+  import net.minecraft.entity.mob.RangedAttackMob;
+                                 ^
     symbol:   class RangedAttackMob
-    location: package net.minecraft.entity
+    location: package net.minecraft.entity.mob
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:7: error: cannot find symbol
-  import net.minecraft.entity.RangedAttackMob;
-                             ^
+  import net.minecraft.entity.mob.RangedAttackMob;
+                                 ^
     symbol:   class RangedAttackMob
-    location: package net.minecraft.entity
+    location: package net.minecraft.entity.mob
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/entity/SecurityBotEntity.java:8: error: cannot find symbol
   import net.minecraft.entity.ai.RangedAttack;
                                 ^
     symbol:   class RangedAttack
     location: package net.minecraft.entity.ai
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class EnergyBoltEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/EnergyBoltEntityModel.java:32: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class EnergyBoltEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay,
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class MeeseeksEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MeeseeksEntityModel.java:78: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay,
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class MeeseeksEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class CronenbergEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/CronenbergEntityModel.java:80: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class CronenbergEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class AlienCrawlerEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AlienCrawlerEntityModel.java:61: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class AlienCrawlerEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class ParasiteEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/ParasiteEntityModel.java:82: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class ParasiteEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/GazorpianEntityModel.java:75: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class GazorpianEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/GazorpianEntityModel.java:75: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class GazorpianEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/SecurityBotEntityModel.java:51: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class SecurityBotEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/SecurityBotEntityModel.java:51: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class SecurityBotEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/PortalAnomalyEntityModel.java:68: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class PortalAnomalyEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/PortalAnomalyEntityModel.java:68: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class PortalAnomalyEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class AbominationEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/AbominationEntityModel.java:111: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class AbominationEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class RickEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/RickEntityModel.java:96: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class RickEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                   ^
     symbol:   class MatrixStack
     location: class MortyEntityModel
   /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/client/render/MortyEntityModel.java:73: error: cannot find symbol
-  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+  	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
   	                                         ^
     symbol:   class VertexConsumer
     location: class MortyEntityModel
-  33 errors
+  31 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
 > Run with --scan to get full insights.
 
-BUILD FAILED in 8s
+BUILD FAILED in 7s
 1 actionable task: 1 executed
