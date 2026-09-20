@@ -4,7 +4,6 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import dev.benluvzbacon.rickmorty.registry.ModRecipes;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.codec.PacketCodec;
@@ -13,6 +12,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.recipe.input.CraftingRecipeInput;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.world.World;
 
@@ -26,7 +26,7 @@ import java.util.Map;
  * The crafting grid must match the pattern (mirroring allowed) and the bench must be
  * sufficiently upgraded with adjacent machines.
  */
-public class WorkbenchRecipe implements Recipe<Inventory> {
+public class WorkbenchRecipe implements Recipe<CraftingRecipeInput> {
 	private final int tier;
 	private final List<String> pattern;
 	private final Map<String, Ingredient> key;
@@ -63,20 +63,22 @@ public class WorkbenchRecipe implements Recipe<Inventory> {
 		return tier;
 	}
 
-	public ItemStack getResult() {
+	/** unambiguous accessor for the compiled output stack */
+	public ItemStack compiledResult() {
 		return result;
 	}
 
 	@Override
-	public boolean matches(Inventory inventory, World world) {
-		return matchesInternal(inventory, false) || matchesInternal(inventory, true);
+	public boolean matches(CraftingRecipeInput input, World world) {
+		return matchesInternal(input, false) || matchesInternal(input, true);
 	}
 
-	private boolean matchesInternal(Inventory inventory, boolean mirror) {
+	private boolean matchesInternal(CraftingRecipeInput input, boolean mirror) {
+		if (input.getWidth() < 3 || input.getHeight() < 3) return false;
 		for (int i = 0; i < 9; i++) {
 			int gridIndex = mirror ? (i / 3) * 3 + (2 - i % 3) : i;
 			Ingredient want = grid.get(gridIndex);
-			ItemStack have = inventory.getStack(i);
+			ItemStack have = input.getStackInSlot(i);
 			if (want.isEmpty()) {
 				if (!have.isEmpty()) return false;
 			} else if (!want.test(have)) {
@@ -87,7 +89,7 @@ public class WorkbenchRecipe implements Recipe<Inventory> {
 	}
 
 	@Override
-	public ItemStack craft(Inventory inventory, RegistryWrapper.WrapperLookup registries) {
+	public ItemStack craft(CraftingRecipeInput input, RegistryWrapper.WrapperLookup registries) {
 		return result.copy();
 	}
 
@@ -115,14 +117,14 @@ public class WorkbenchRecipe implements Recipe<Inventory> {
 		private static final MapCodec<WorkbenchRecipe> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
 				Codec.INT.optionalFieldOf("tier", 1).forGetter(WorkbenchRecipe::getTier),
 				Codec.STRING.listOf().fieldOf("pattern").forGetter(r -> r.pattern),
-				Codec.unboundedMap(Codec.STRING, Ingredient.CODEC).fieldOf("key").forGetter(r -> r.key),
-				ItemStack.CODEC.fieldOf("result").forGetter(WorkbenchRecipe::getResult)
+				Codec.unboundedMap(Codec.STRING, Ingredient.DISALLOW_EMPTY_CODEC).fieldOf("key").forGetter(r -> r.key),
+				ItemStack.OPTIONAL_CODEC.fieldOf("result").forGetter(WorkbenchRecipe::compiledResult)
 		).apply(instance, WorkbenchRecipe::new));
 
 		private static final PacketCodec<RegistryByteBuf, WorkbenchRecipe> PACKET_CODEC = PacketCodec.tuple(
 				PacketCodecs.VAR_INT, r -> r.tier,
-				PacketCodecs.collection(java.util.ArrayList::new, PacketCodecs.STRING), r -> r.pattern,
-				PacketCodecs.map(java.util.HashMap::new, PacketCodecs.STRING, Ingredient.PACKET_CODEC), r -> r.key,
+				PacketCodecs.collection(ArrayList::new, PacketCodecs.STRING), r -> r.pattern,
+				PacketCodecs.map(HashMap::new, PacketCodecs.STRING, Ingredient.PACKET_CODEC), r -> r.key,
 				ItemStack.PACKET_CODEC, r -> r.result,
 				WorkbenchRecipe::new);
 

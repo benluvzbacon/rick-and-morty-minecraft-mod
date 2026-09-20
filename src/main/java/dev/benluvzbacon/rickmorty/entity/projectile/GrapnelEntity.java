@@ -67,7 +67,7 @@ public class GrapnelEntity extends ProjectileEntity {
 			double len = pull.length();
 			if (len > 2.0) {
 				pull = pull.normalize().multiply(Math.min(REEL_SPEED, len * 0.3));
-				owner.setVelocity(pull.x, pull.y * 1.15 + 0.02, pull.z);
+				owner.setVelocity(new Vec3d(pull.x, pull.y * 1.15 + 0.02, pull.z));
 				if (owner instanceof ServerPlayerEntity sp) sp.velocityModified = true;
 			} else {
 				discard();

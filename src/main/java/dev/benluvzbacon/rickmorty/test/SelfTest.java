@@ -296,7 +296,7 @@ public class SelfTest {
 			check("quantum computer boosts tier", bench.computeTier() >= 2, "tier=" + bench.computeTier());
 			if (!all.isEmpty()) {
 				WorkbenchRecipe any = all.get(0).value();
-				check("recipe result available", !any.getResult().isEmpty(), "result " + any.getResult().getItem());
+				check("recipe result available", !any.compiledResult().isEmpty(), "result " + any.compiledResult().getItem());
 			}
 		} catch (Throwable t) {
 			fail("workbench", t.toString());

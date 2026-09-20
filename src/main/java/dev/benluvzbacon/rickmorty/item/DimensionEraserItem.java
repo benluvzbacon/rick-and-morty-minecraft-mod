@@ -41,10 +41,10 @@ public class DimensionEraserItem extends Item {
 		if (!(world instanceof ServerWorld sw)) return ActionResult.SUCCESS;
 
 		if (entity instanceof AbominationEntity) {
-			entity.damage(sw, user.getDamageSources().create(ModDamageTypes.DIMENSION_ERASE, user), 40.0f);
+			entity.damage(user.getDamageSources().create(ModDamageTypes.DIMENSION_ERASE, user), 40.0f);
 			user.sendMessage(Text.translatable("msg.rickmorty.eraser.boss").formatted(Formatting.DARK_PURPLE), true);
 		} else {
-			entity.damage(sw, user.getDamageSources().create(ModDamageTypes.DIMENSION_ERASE, user), Float.MAX_VALUE / 4f);
+			entity.damage(user.getDamageSources().create(ModDamageTypes.DIMENSION_ERASE, user), Float.MAX_VALUE / 4f);
 			user.sendMessage(Text.translatable("msg.rickmorty.eraser.erased", entity.getName())
 					.formatted(Formatting.DARK_PURPLE), true);
 		}

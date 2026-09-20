@@ -106,7 +106,7 @@ public class MeeseeksTaskGoal extends Goal {
 			meeseeks.getNavigation().stop();
 			if (attackCooldown <= 0) {
 				if (meeseeks.getWorld() instanceof net.minecraft.server.world.ServerWorld sw) {
-					target.damage(sw, meeseeks.getDamageSources().mobAttack(meeseeks), 6.0f);
+					target.damage(meeseeks.getDamageSources().mobAttack(meeseeks), 6.0f);
 					meeseeks.swingHand(net.minecraft.util.Hand.MAIN_HAND);
 				}
 				attackCooldown = 20;

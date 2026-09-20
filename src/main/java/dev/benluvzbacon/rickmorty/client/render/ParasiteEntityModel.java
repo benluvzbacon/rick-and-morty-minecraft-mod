@@ -67,7 +67,7 @@ public class ParasiteEntityModel extends EntityModel<ParasiteEntity> {
 		head.yaw = headYaw * (MathHelper.PI / 180f) * 0.5f;
 		head.pitch = headPitch * (MathHelper.PI / 180f) * 0.4f;
 		// perpetual tweak
-		jaw.pitch = Math.max(0, MathHelper.sin(animationProgress * 1.3f)) * 0.5f + (entity.isHostile() ? 0.35f : 0);
+		jaw.pitch = Math.max(0, MathHelper.sin(animationProgress * 1.3f)) * 0.5f + (entity.getTarget() != null ? 0.35f : 0);
 		rightLeg.pitch = MathHelper.cos(limbAngle * 0.6662f) * 1.5f * limbDistance;
 		leftLeg.pitch = MathHelper.cos(limbAngle * 0.6662f + MathHelper.PI) * 1.5f * limbDistance;
 		rightArm.pitch = MathHelper.cos(limbAngle * 0.6662f + MathHelper.PI) * 1.4f * limbDistance

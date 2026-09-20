@@ -45,7 +45,7 @@ public class SecurityBotEntity extends PathAwareEntity {
 	@Override
 	protected void initGoals() {
 		this.goalSelector.add(0, new SwimGoal(this));
-		this.goalSelector.add(2, new ProjectileAttackGoal(this, 1.1, 40, 18.0f));
+		this.goalSelector.add(2, new dev.benluvzbacon.rickmorty.entity.ai.BotShootOrbitGoal(this));
 		this.goalSelector.add(5, new WanderAroundFarGoal(this, 0.7));
 		this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
 		this.goalSelector.add(7, new LookAroundGoal(this));
@@ -60,7 +60,7 @@ public class SecurityBotEntity extends PathAwareEntity {
 	@Nullable
 	public LivingEntity getOwner() {
 		if (ownerUuid == null) return null;
-		return getWorld().getEntity(ownerUuid) instanceof LivingEntity living ? living : null;
+		return getWorld() instanceof net.minecraft.server.world.ServerWorld sw && sw.getEntity(ownerUuid) instanceof LivingEntity living ? living : null;
 	}
 
 	public void setLifespan(int ticks) {

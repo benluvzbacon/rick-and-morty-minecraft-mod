@@ -68,9 +68,23 @@ public class RickWorkbenchScreenHandler extends ScreenHandler {
 		}
 
 		this.addProperties(properties);
-
-		inventory.addListener(inv -> updateResult());
 		updateResult();
+	}
+
+	private long lastGridStamp = -1;
+	/** cheap grid-change detection: called every server tick while the screen is open */
+	@Override
+	public void updateToClient() {
+		long stamp = 0;
+		for (int i = 0; i < 9; i++) {
+			ItemStack st = inventory.getStack(i);
+			stamp = stamp * 31 + st.getItem().hashCode();
+			stamp = stamp * 31 + st.getCount();
+		}
+		if (stamp != lastGridStamp) {
+			lastGridStamp = stamp;
+			updateResult();
+		}
 	}
 
 	// client-side ctor
@@ -95,13 +109,13 @@ public class RickWorkbenchScreenHandler extends ScreenHandler {
 		if (world == null) return;
 		Optional<RecipeEntry<WorkbenchRecipe>> match = world.getRecipeManager()
 				.listAllOfType(ModRecipes.WORKBENCH_TYPE).stream()
-				.filter(entry -> entry.value().matches(craftGrid(), world))
+				.filter(entry -> entry.value().matches(craftInput(), world))
 				.findFirst();
 		if (match.isPresent()) {
 			WorkbenchRecipe recipe = match.get().value();
 			if (recipe.getTier() <= bench.computeTier()) {
 				this.activeRecipe = recipe;
-				inventory.setStack(9, recipe.getResult().copy());
+				inventory.setStack(9, recipe.compiledResult().copy());
 			} else {
 				this.activeRecipe = recipe; // recipe visible but tier-blocked (GUI shows it)
 				inventory.setStack(9, ItemStack.EMPTY);
@@ -112,9 +126,14 @@ public class RickWorkbenchScreenHandler extends ScreenHandler {
 		}
 	}
 
-	/** the 3x3 crafting portion of the inventory */
-	private Inventory craftGrid() {
-		return inventory; // grid occupies slots 0-8; result slot 9 is ignored by recipes
+	/** the 3x3 crafting portion of the inventory as a recipe input */
+	private net.minecraft.recipe.input.CraftingRecipeInput craftInput() {
+		net.minecraft.util.collection.DefaultedList<ItemStack> cells =
+				net.minecraft.util.collection.DefaultedList.ofSize(9, ItemStack.EMPTY);
+		for (int i = 0; i < 9; i++) {
+			cells.set(i, inventory.getStack(i));
+		}
+		return net.minecraft.recipe.input.CraftingRecipeInput.create(3, 3, cells);
 	}
 
 	public WorkbenchRecipe getActiveRecipe() {

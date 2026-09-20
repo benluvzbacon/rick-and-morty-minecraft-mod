@@ -39,7 +39,6 @@ public class PortalAnomalyEntity extends MobEntity {
 
 	@Override
 	protected void initGoals() {
-		this.targetSelector.add(1, new RevengeGoal(this));
 		this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
 	}
 

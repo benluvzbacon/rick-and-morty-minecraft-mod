@@ -53,6 +53,16 @@ public class EnergyBoltEntity extends ProjectileEntity {
 		this.setNoGravity(true);
 	}
 
+	private static void setVelocityFromAngles(EnergyBoltEntity bolt, float pitch, float yaw, float speed, float divergence) {
+		float rad = (float) (Math.PI / 180.0);
+		float x = -net.minecraft.util.math.MathHelper.sin(yaw * rad) * net.minecraft.util.math.MathHelper.cos(pitch * rad);
+		float y = -net.minecraft.util.math.MathHelper.sin(pitch * rad);
+		float z = net.minecraft.util.math.MathHelper.cos(yaw * rad) * net.minecraft.util.math.MathHelper.cos(pitch * rad);
+		java.util.Random r = new java.util.Random();
+		bolt.setVelocity(new Vec3d(x, y, z).normalize().multiply(speed)
+				.add(r.nextGaussian() * 0.0075 * divergence, r.nextGaussian() * 0.0075 * divergence, r.nextGaussian() * 0.0075 * divergence));
+	}
+
 	private static EnergyBoltEntity create(LivingEntity shooter, LivingEntity target, Kind kind, float damage) {
 		EnergyBoltEntity bolt = new EnergyBoltEntity(ModEntities.ENERGY_BOLT, shooter.getWorld());
 		bolt.kind = kind;
@@ -60,7 +70,7 @@ public class EnergyBoltEntity extends ProjectileEntity {
 		bolt.lifeTicks = kind == Kind.ANOMALY ? 90 : 60;
 		bolt.setOwner(shooter);
 		bolt.setPosition(shooter.getX(), shooter.getEyeY() - 0.15, shooter.getZ());
-		bolt.setVelocity(shooter, target.getPitch(), target.getYaw(), 0f, 1.5f, 0.2f);
+		setVelocityFromAngles(bolt, target.getPitch(), target.getYaw(), 1.5f * 20, 0.2f * 20);
 		// aim directly at the target instead of where the shooter looks, for reliability
 		Vec3d dir = target.getPos().add(0, target.getHeight() * 0.5, 0)
 				.subtract(shooter.getX(), shooter.getEyeY() - 0.15, shooter.getZ()).normalize();
@@ -84,7 +94,7 @@ public class EnergyBoltEntity extends ProjectileEntity {
 		bolt.lifeTicks = 70;
 		bolt.setOwner(shooter);
 		bolt.setPosition(shooter.getX(), shooter.getEyeY() - 0.1, shooter.getZ());
-		bolt.setVelocity(shooter, shooter.getPitch(), shooter.getYaw(), 0, (float) (kind.speed * 0.08), divergence);
+		setVelocityFromAngles(bolt, shooter.getPitch(), shooter.getYaw(), (float) kind.speed, divergence / 20f);
 		return bolt;
 	}
 
@@ -96,9 +106,9 @@ public class EnergyBoltEntity extends ProjectileEntity {
 	public static EnergyBoltEntity plasmaBarrage(LivingEntity shooter, LivingEntity target, float damage) {
 		EnergyBoltEntity bolt = create(shooter, target, Kind.PLASMA, damage);
 		Vec3d v = bolt.getVelocity();
-		bolt.setVelocity(v.x + (shooter.getRandom().nextDouble() - 0.5) * 0.22,
+		bolt.setVelocity(new Vec3d(v.x + (shooter.getRandom().nextDouble() - 0.5) * 0.22,
 				v.y + (shooter.getRandom().nextDouble() - 0.5) * 0.16,
-				v.z + (shooter.getRandom().nextDouble() - 0.5) * 0.22);
+				v.z + (shooter.getRandom().nextDouble() - 0.5) * 0.22));
 		return bolt;
 	}
 
@@ -147,10 +157,10 @@ public class EnergyBoltEntity extends ProjectileEntity {
 				}, this, getOwner());
 				boolean hurt;
 				if (kind == Kind.PLASMA) {
-					hurt = target instanceof LivingEntity living && living.damage(sw, source, damage);
+					hurt = target instanceof LivingEntity living && living.damage(source, damage);
 					areaBlast(sw, target);
 				} else {
-					hurt = target.damage(sw, source, damage);
+					hurt = target.damage(source, damage);
 				}
 				if (hurt && target instanceof LivingEntity living) {
 					float kb = 0.4f;
@@ -168,7 +178,7 @@ public class EnergyBoltEntity extends ProjectileEntity {
 				center.getBoundingBox().expand(2.5), e -> e != center && e != getOwner() && e.isAlive());
 		DamageSource source = getDamageSources().create(ModDamageTypes.PLASMA, this, getOwner());
 		for (LivingEntity victim : victims) {
-			victim.damage(world, source, damage * 0.6f);
+			victim.damage(source, damage * 0.6f);
 		}
 	}
 

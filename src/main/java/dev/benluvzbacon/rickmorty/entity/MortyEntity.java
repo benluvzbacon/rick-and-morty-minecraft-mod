@@ -170,12 +170,12 @@ public class MortyEntity extends PathAwareEntity {
 			setPersistent();
 			return stack;
 		}
-		return super.tryEquip(world, stack);
+		return super.tryEquip(stack);
 	}
 
 	@Override
 	public boolean isPersistent() {
-		return this.isPersistent || trustedPlayer != null;
+		return this.persistent || trustedPlayer != null;
 	}
 
 	@Override

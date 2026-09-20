@@ -46,7 +46,7 @@ public final class ShrinkTracker {
 			if (entry.getValue() > finalNow) continue;
 			it.remove();
 			for (ServerWorld world : server.getWorlds()) {
-				if (world.getEntity(entry.getKey()) instanceof LivingEntity living) {
+				if (world instanceof net.minecraft.server.world.ServerWorld sw && sw.getEntity(entry.getKey()) instanceof LivingEntity living) {
 					var attr = living.getAttributeInstance(EntityAttributes.GENERIC_SCALE);
 					if (attr != null) {
 						attr.removeModifier(ModDamageTypes.SHRINK_MODIFIER_ID);

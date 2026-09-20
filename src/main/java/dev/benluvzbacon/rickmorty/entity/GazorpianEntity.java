@@ -42,8 +42,8 @@ public class GazorpianEntity extends HostileEntity {
 	}
 
 	@Override
-	public boolean tryAttack(ServerWorld world, net.minecraft.entity.Entity target) {
-		boolean hit = super.tryAttack(world, target);
+	public boolean tryAttack(net.minecraft.entity.Entity target) {
+		boolean hit = super.tryAttack(target);
 		if (hit && target instanceof net.minecraft.entity.LivingEntity living) {
 			// freight-train knockback
 			double dx = target.getX() - getX();
