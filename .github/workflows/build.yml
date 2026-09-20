@@ -29,8 +29,10 @@ jobs:
         run: |
           mkdir -p dist
           {
-            echo "=== fabric-loom plugin marker ==="
-            curl -s https://maven.fabricmc.net/net/fabricmc/fabric-loom/fabric-loom.gradle.plugin/maven-metadata.xml | grep -o "<version>[^<]*" | sed 's/<version>//' | tr '\n' ' '
+            echo "=== fabric-loom artifact ==="
+            curl -sv https://maven.fabricmc.net/net/fabricmc/fabric-loom/maven-metadata.xml -o /tmp/loom.xml 2>/tmp/loom.err; tail -5 /tmp/loom.err; grep -o "<version>[^<]*" /tmp/loom.xml | sed 's/<version>//' | tr '\n' ' '
+            echo; echo "=== loom gradle plugin portal marker (fallback main artifact) ==="
+            grep -o "<latest>[^<]*" /tmp/loom.xml
             echo; echo "=== yarn latest 1.21.1 ==="
             curl -s https://maven.fabricmc.net/net/fabricmc/yarn/maven-metadata.xml | grep -o "1.21.1+build.[0-9]*" | tr '\n' ' '
             echo; echo "=== loader latest ==="
