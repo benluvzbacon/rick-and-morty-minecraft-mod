@@ -161,7 +161,7 @@ public class MortyEntity extends PathAwareEntity {
 	}
 
 	@Override
-	public ItemStack tryEquip(ServerWorld world, ItemStack stack) {
+	public ItemStack tryEquip(ItemStack stack) {
 		if (stack.getItem() instanceof PortalBlasterItem) {
 			equipStack(EquipmentSlot.MAINHAND, stack.copyWithCount(1));
 			setEquipmentDropChance(EquipmentSlot.MAINHAND, 1.0f);

@@ -186,8 +186,9 @@ public class RMChunkGenerator extends ChunkGenerator {
 		// surface states are produced directly by stateAt
 	}
 
-	public CompletableFuture<Chunk> populateNoise(Executor executor, Blender blender, NoiseConfig noiseConfig,
-												  StructureAccessor structureAccessor, Chunk chunk) {
+	@Override
+	public CompletableFuture<Chunk> populateNoise(Blender blender, NoiseConfig noiseConfig,
+											  StructureAccessor structureAccessor, Chunk chunk) {
 		ChunkPos chunkPos = chunk.getPos();
 		int startX = chunkPos.getStartX();
 		int startZ = chunkPos.getStartZ();

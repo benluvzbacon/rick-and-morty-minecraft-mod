@@ -50,7 +50,7 @@ public class AlienReactorBlock extends BlockWithEntity {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.ALIEN_REACTOR_ENTITY, AlienReactorBlockEntity::tick);
+		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
 	}
 
 	@Override

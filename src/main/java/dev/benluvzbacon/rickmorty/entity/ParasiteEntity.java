@@ -51,7 +51,6 @@ public class ParasiteEntity extends HostileEntity {
 		return hit;
 	}
 
-	@Override
 	protected float getActiveEyeHeight(net.minecraft.entity.EntityPose pose, net.minecraft.entity.EntityDimensions dimensions) {
 		return 0.25f;
 	}

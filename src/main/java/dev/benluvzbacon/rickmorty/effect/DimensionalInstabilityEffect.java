@@ -22,7 +22,8 @@ public class DimensionalInstabilityEffect extends StatusEffect {
 	}
 
 	@Override
-	public boolean applyUpdateEffect(ServerWorld world, LivingEntity entity, int amplifier) {
+	public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
+		if (!(entity.getWorld() instanceof ServerWorld world)) return false;
 		if (world.getDifficulty() == Difficulty.PEACEFUL) return true;
 		if (world.random.nextInt(3) != 0) return true;
 		double dx = (world.random.nextDouble() - 0.5) * 6;
