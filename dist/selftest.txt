@@ -11,9 +11,12 @@ Fabric Loom: 1.10.5
 /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method carve(ChunkRegion,long,NoiseConfig,BiomeAccess,StructureAccessor,Chunk,Carver) in ChunkGenerator
 public class RMChunkGenerator extends ChunkGenerator {
        ^
+/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:180: error: method does not override or implement a method from a supertype
+	@Override
+	^
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-1 error
+2 errors
 
 > Task :compileJava FAILED
 
@@ -24,10 +27,12 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileJava'.
 > Compilation failed; see the compiler output below.
-  Note: Recompile with -Xlint:unchecked for details.Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method carve(ChunkRegion,long,NoiseConfig,BiomeAccess,StructureAccessor,Chunk,Carver) in ChunkGenerator
+  Note: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:180: error: method does not override or implement a method from a supertype
+  	@Override
+  	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method carve(ChunkRegion,long,NoiseConfig,BiomeAccess,StructureAccessor,Chunk,Carver) in ChunkGenerator
   public class RMChunkGenerator extends ChunkGenerator {
          ^
-  1 error
+  2 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
