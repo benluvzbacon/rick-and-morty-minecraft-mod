@@ -1,8 +1,0 @@
-{
-  "type": "rickmorty:citadel",
-  "generator": {
-    "type": "rickmorty:rm_generator",
-    "biome": "rickmorty:citadel_plaza",
-    "preset": "citadel"
-  }
-}

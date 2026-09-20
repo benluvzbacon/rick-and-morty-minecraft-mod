@@ -2,7 +2,7 @@
   "type": "rickmorty:cronenberg_world",
   "generator": {
     "type": "rickmorty:rm_generator",
-    "biome": "rickmorty:cronenberg_fields",
+    "biome": "rickmorty:cronenberg_wastes",
     "preset": "cronenberg"
   }
 }

@@ -1,8 +1,0 @@
-{
-  "type": "rickmorty:pocket_dimension",
-  "generator": {
-    "type": "rickmorty:rm_generator",
-    "biome": "rickmorty:pocket_void",
-    "preset": "pocket"
-  }
-}

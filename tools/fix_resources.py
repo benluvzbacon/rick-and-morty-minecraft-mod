@@ -238,7 +238,7 @@ def wb(name, pattern, key, result, count=1, tier=1):
     wjson(os.path.join(rd,name+'.json'), {"type":"rickmorty:workbench","pattern":pattern,
         "key":key,"result":{"id":result,"count":count},"tier":tier})
 
-I='minecraft:iron_ingot'; C='minecraft:copper_ingot'; R='minecraft:redstone'
+I='minecraft:iron_ingot'; C='minecraft:copper_ingot'; RDT='minecraft:redstone'
 AC=f'{NS}:alien_crystal'; PC=f'{NS}:pocket_crystal'; IC=f'{NS}:interdimensional_crystal'
 ADV=f'{NS}:advanced_circuitry'; QC=f'{NS}:quantum_circuit'; PL=f'{NS}:robot_plating'
 EC=f'{NS}:energy_cell'; PCELL=f'{NS}:plasma_cell'; SF=f'{NS}:sci_fi_metal'; DM=f'{NS}:dark_matter'
@@ -246,11 +246,11 @@ AA=f'{NS}:alien_alloy_ingot'; RS=f'{NS}:rift_shard'; PGF=f'{NS}:portal_gun_frame
 
 shaped('sci_fi_metal',['IAI','ACA','IAI'],{'I':{'item':I},'A':{'item':C},'C':{'item':'minecraft:cobblestone'}},f'{NS}:sci_fi_metal',4)
 shapeless('lab_glass',[{'item':'minecraft:glass'},{'item':'minecraft:cyan_dye'}],f'{NS}:lab_glass',8)
-shapeless('simple_wafer',[{'item':I},{'item':R}],f'{NS}:simple_wafer',4)
+shapeless('simple_wafer',[{'item':I},{'item':RDT}],f'{NS}:simple_wafer',4)
 shaped('robot_plating',['IA','AI','  '],{'I':{'item':I},'A':{'item':AA}},f'{NS}:robot_plating',4)
-shaped('advanced_circuitry',['WWW','RQR','WWW'],{'W':{'item':SW},'R':{'item':R},'Q':{'item':'minecraft:quartz'}},f'{NS}:advanced_circuitry',2)
+shaped('advanced_circuitry',['WWW','RQR','WWW'],{'W':{'item':SW},'R':{'item':RDT},'Q':{'item':'minecraft:quartz'}},f'{NS}:advanced_circuitry',2)
 shaped('quantum_circuit',['EAE','AQA','EAE'],{'E':{'item':'minecraft:ender_pearl'},'A':{'item':ADV},'Q':{'item':QC if False else 'minecraft:quartz'}},f'{NS}:quantum_circuit')
-shaped('energy_cell',['CRC','RGR','CRC'],{'C':{'item':C},'R':{'item':R},'G':{'item':AC}},f'{NS}:energy_cell',2)
+shaped('energy_cell',['CRC','RGR','CRC'],{'C':{'item':C},'R':{'item':RDT},'G':{'item':AC}},f'{NS}:energy_cell',2)
 shaped('plasma_cell',[' E ','GCG',' E '],{'E':{'item':EC},'G':{'item':'minecraft:glowstone_dust'},'C':{'item':AC}},f'{NS}:plasma_cell',2)
 shapeless('alien_alloy_ingot',[{'item':I},{'item':AC},{'item':C}],f'{NS}:alien_alloy_ingot',2)
 shaped('dark_matter_block',['DDD','DDD','DDD'],{'D':{'item':DM}},f'{NS}:dark_matter_block')
@@ -263,7 +263,7 @@ shaped('portal_gun_frame',['PPP','GGP','   '],{'P':{'item':PL},'G':{'item':'mine
 shaped('portal_machine',['SAS','AEA','SAS'],{'S':{'item':SF},'A':{'item':ADV},'E':{'item':EC}},f'{NS}:portal_machine')
 shaped('portal_fluid_tank',['GGG','G G','SSS'],{'G':{'item':'minecraft:glass'},'S':{'item':SF}},f'{NS}:portal_fluid_tank')
 shaped('portal_fluid_canister',[' G ','GBG',' S '],{'G':{'item':'minecraft:glass'},'B':{'item':'minecraft:iron_nugget'},'S':{'item':SF}},f'{NS}:portal_fluid_canister',2)
-shaped('interdimensional_scanner',['CGC','GAG','SRS'],{'C':{'item':C},'G':{'item':'minecraft:glass'},'A':{'item':ADV},'S':{'item':SF},'R':{'item':R}},f'{NS}:interdimensional_scanner')
+shaped('interdimensional_scanner',['CGC','GAG','SRS'],{'C':{'item':C},'G':{'item':'minecraft:glass'},'A':{'item':ADV},'S':{'item':SF},'R':{'item':RDT}},f'{NS}:interdimensional_scanner')
 shaped('grappling_hook',[' I ','IHI',' S '],{'I':{'item':I},'H':{'item':'minecraft:tripwire_hook'},'S':{'item':'minecraft:string'}},f'{NS}:grappling_hook')
 shaped('magnet_hook_filler_disabled' if False else 'laser_gun',['CGC','AEE','S S '],
   {'C':{'item':C},'G':{'item':'minecraft:glass' if False else 'minecraft:redstone'},'A':{'item':ADV},'E':{'item':EC},'S':{'item':SF}},
