@@ -353,7 +353,6 @@ public class SelfTest {
 			boss.setHealth(boss.getMaxHealth() * 0.2f);
 			check("boss phase 3", boss.getPhase() == 3, "phase 3 at 20%");
 			boss.discard();
-			world.setDifficulty(Difficulty.NORMAL);
 
 			int placed = DimensionalEventManager.spawnStormAt(world, base, 3);
 			check("portal storm spawns rifts", placed > 0, "placed=" + placed);

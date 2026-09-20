@@ -177,18 +177,15 @@ public class RMChunkGenerator extends ChunkGenerator {
 
 	// ---------------------------------------------------------------- required overrides
 
-	@Override
 	public void carve(ChunkRegion chunkRegion, long seed, NoiseConfig noiseConfig, BiomeAccess biomeAccess,
 					  StructureAccessor structureAccessor, Chunk chunk) {
 		// no carvers; caves are baked into the density function
 	}
 
-	@Override
 	public void buildSurface(ChunkRegion region, StructureAccessor structures, NoiseConfig noiseConfig, Chunk chunk) {
 		// surface states are produced directly by stateAt
 	}
 
-	@Override
 	public CompletableFuture<Chunk> populateNoise(Executor executor, Blender blender, NoiseConfig noiseConfig,
 												  StructureAccessor structureAccessor, Chunk chunk) {
 		ChunkPos chunkPos = chunk.getPos();
@@ -257,8 +254,8 @@ public class RMChunkGenerator extends ChunkGenerator {
 	}
 
 	@Override
-	public void appendDebugHudText(java.lang.StringBuilder text, NoiseConfig noiseConfig, BlockPos pos) {
-		text.append("RickMorty[").append(preset).append(']');
+	public void getDebugHudText(java.util.List<String> text, NoiseConfig noiseConfig, BlockPos pos) {
+		text.add("RickMorty[" + preset + "]");
 	}
 
 	@Override

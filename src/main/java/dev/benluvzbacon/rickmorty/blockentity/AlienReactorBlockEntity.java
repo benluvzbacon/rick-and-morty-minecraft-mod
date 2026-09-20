@@ -94,7 +94,7 @@ public class AlienReactorBlockEntity extends BlockEntity {
 		}
 		if (be.progress > 0 && world.getTime() % 20 == 0 && state.contains(AlienReactorBlock.ACTIVE)) {
 			if (!state.get(AlienReactorBlock.ACTIVE)) {
-				world.setBlockState(pos, state.with(AlienReactorBlock.ACTIVE, true), BlockState.NOTIFY_ALL);
+				world.setBlockState(pos, state.with(AlienReactorBlock.ACTIVE, true), net.minecraft.block.Block.NOTIFY_ALL);
 			}
 		}
 	}

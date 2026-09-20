@@ -42,7 +42,7 @@ public class PlumbusMachineBlock extends BlockWithEntity {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return checkType(type, ModBlockEntities.PLUMBUS_MACHINE_ENTITY, PlumbusMachineBlockEntity::tick);
+		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PLUMBUS_MACHINE_ENTITY, PlumbusMachineBlockEntity::tick);
 	}
 
 	@Override

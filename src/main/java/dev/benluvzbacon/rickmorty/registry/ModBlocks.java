@@ -1,6 +1,7 @@
 package dev.benluvzbacon.rickmorty.registry;
 
 import dev.benluvzbacon.rickmorty.RickMortyMod;
+import dev.benluvzbacon.rickmorty.portal.PortalBlock;
 import dev.benluvzbacon.rickmorty.block.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;

@@ -7,6 +7,7 @@ import dev.benluvzbacon.rickmorty.portal.PortalBlockEntity;
 import dev.benluvzbacon.rickmorty.registry.ModBlocks;
 import dev.benluvzbacon.rickmorty.registry.ModSounds;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;

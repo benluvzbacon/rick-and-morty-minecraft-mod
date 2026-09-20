@@ -45,7 +45,7 @@ public class ParasiteEntity extends HostileEntity {
 	@Override
 	public boolean tryAttack(net.minecraft.entity.Entity target) {
 		boolean hit = super.tryAttack(target);
-		if (hit && target instanceof LivingEntity living && world.getRandom().nextInt(4) == 0) {
+		if (hit && target instanceof LivingEntity living && getWorld().getRandom().nextInt(4) == 0) {
 			living.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 80, 0), this);
 		}
 		return hit;

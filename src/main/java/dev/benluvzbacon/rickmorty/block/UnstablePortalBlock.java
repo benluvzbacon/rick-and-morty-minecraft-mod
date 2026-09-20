@@ -36,7 +36,7 @@ public class UnstablePortalBlock extends BlockWithEntity {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return checkType(type, ModBlockEntities.UNSTABLE_PORTAL_ENTITY, UnstablePortalBlockEntity::tick);
+		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.UNSTABLE_PORTAL_ENTITY, UnstablePortalBlockEntity::tick);
 	}
 
 	@Override

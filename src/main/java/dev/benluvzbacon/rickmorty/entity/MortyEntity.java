@@ -88,7 +88,6 @@ public class MortyEntity extends PathAwareEntity {
 		return trustedPlayer;
 	}
 
-	@Override
 	public void shootAt(LivingEntity target, float pullProgress) {
 		if (!hasWeapon()) return;
 		EnergyBoltEntity bolt = EnergyBoltEntity.portalBolt(this, target, 4.0f);
@@ -175,7 +174,7 @@ public class MortyEntity extends PathAwareEntity {
 
 	@Override
 	public boolean isPersistent() {
-		return this.persistent || trustedPlayer != null;
+		return super.isPersistent() || trustedPlayer != null;
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class MeeseeksBoxBlockEntity extends BlockEntity {
 	/** Spawns a Meeseeks next to the box. False while recharging. */
 	public boolean summon(ServerWorld world, BlockPos pos, net.minecraft.entity.player.PlayerEntity player) {
 		if (!isCharged(world.getTime())) return false;
-		MeeseeksEntity meeseeks = ModEntities.MEESEEKS.create(world, null, null, pos.up(), SpawnReason.TRIGGERED, true, false);
+		MeeseeksEntity meeseeks = ModEntities.MEESEEKS.spawn(world, pos.up(), SpawnReason.TRIGGERED);
 		if (meeseeks == null) {
 			meeseeks = new MeeseeksEntity(ModEntities.MEESEEKS, world);
 			meeseeks.refreshPositionAndAngles(pos.up(), world.random.nextFloat() * 360f, 0);

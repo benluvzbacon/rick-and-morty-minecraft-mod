@@ -176,7 +176,6 @@ public class AbominationEntity extends HostileEntity {
 		// bosses don't despawn
 	}
 
-	@Override
 	public boolean isRoaring() {
 		return attackCooldown <= 20;
 	}

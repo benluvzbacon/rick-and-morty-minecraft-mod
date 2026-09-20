@@ -25,7 +25,7 @@ import net.minecraft.util.math.RotationAxis;
 public final class Renderers {
 public static class MeeseeksEntityRenderer extends MobEntityRenderer<MeeseeksEntity, MeeseeksEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/meeseeks.png");
-	MeeseeksEntityRenderer(EntityRendererFactory.Context context) {
+	public MeeseeksEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new MeeseeksEntityModel(context.getPart(MeeseeksEntityModel.LAYER)), 0.5f);
 	}
 	@Override public Identifier getTexture(MeeseeksEntity entity) { return TEXTURE; }
@@ -33,7 +33,7 @@ public static class MeeseeksEntityRenderer extends MobEntityRenderer<MeeseeksEnt
 
 public static class CronenbergEntityRenderer extends MobEntityRenderer<CronenbergEntity, CronenbergEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/cronenberg.png");
-	CronenbergEntityRenderer(EntityRendererFactory.Context context) {
+	public CronenbergEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new CronenbergEntityModel(context.getPart(CronenbergEntityModel.LAYER)), 0.7f);
 	}
 	@Override public Identifier getTexture(CronenbergEntity entity) { return TEXTURE; }
@@ -41,7 +41,7 @@ public static class CronenbergEntityRenderer extends MobEntityRenderer<Cronenber
 
 public static class AlienCrawlerEntityRenderer extends MobEntityRenderer<AlienCrawlerEntity, AlienCrawlerEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/alien_crawler.png");
-	AlienCrawlerEntityRenderer(EntityRendererFactory.Context context) {
+	public AlienCrawlerEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new AlienCrawlerEntityModel(context.getPart(AlienCrawlerEntityModel.LAYER)), 0.4f);
 	}
 	@Override public Identifier getTexture(AlienCrawlerEntity entity) { return TEXTURE; }
@@ -49,7 +49,7 @@ public static class AlienCrawlerEntityRenderer extends MobEntityRenderer<AlienCr
 
 public static class ParasiteEntityRenderer extends MobEntityRenderer<ParasiteEntity, ParasiteEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/parasite.png");
-	ParasiteEntityRenderer(EntityRendererFactory.Context context) {
+	public ParasiteEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new ParasiteEntityModel(context.getPart(ParasiteEntityModel.LAYER)), 0.6f);
 	}
 	@Override public Identifier getTexture(ParasiteEntity entity) { return TEXTURE; }
@@ -57,7 +57,7 @@ public static class ParasiteEntityRenderer extends MobEntityRenderer<ParasiteEnt
 
 public static class GazorpianEntityRenderer extends MobEntityRenderer<GazorpianEntity, GazorpianEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/gazorpian.png");
-	GazorpianEntityRenderer(EntityRendererFactory.Context context) {
+	public GazorpianEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new GazorpianEntityModel(context.getPart(GazorpianEntityModel.LAYER)), 0.8f);
 	}
 	@Override public Identifier getTexture(GazorpianEntity entity) { return TEXTURE; }
@@ -65,7 +65,7 @@ public static class GazorpianEntityRenderer extends MobEntityRenderer<GazorpianE
 
 public static class SecurityBotEntityRenderer extends MobEntityRenderer<SecurityBotEntity, SecurityBotEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/security_bot.png");
-	SecurityBotEntityRenderer(EntityRendererFactory.Context context) {
+	public SecurityBotEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new SecurityBotEntityModel(context.getPart(SecurityBotEntityModel.LAYER)), 0.5f);
 	}
 	@Override public Identifier getTexture(SecurityBotEntity entity) { return TEXTURE; }
@@ -73,7 +73,7 @@ public static class SecurityBotEntityRenderer extends MobEntityRenderer<Security
 
 public static class PortalAnomalyEntityRenderer extends MobEntityRenderer<PortalAnomalyEntity, PortalAnomalyEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/portal_anomaly.png");
-	PortalAnomalyEntityRenderer(EntityRendererFactory.Context context) {
+	public PortalAnomalyEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new PortalAnomalyEntityModel(context.getPart(PortalAnomalyEntityModel.LAYER)), 0.5f);
 	}
 	@Override public Identifier getTexture(PortalAnomalyEntity entity) { return TEXTURE; }
@@ -81,7 +81,7 @@ public static class PortalAnomalyEntityRenderer extends MobEntityRenderer<Portal
 
 public static class AbominationEntityRenderer extends MobEntityRenderer<AbominationEntity, AbominationEntityModel> {
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/abomination.png");
-	AbominationEntityRenderer(EntityRendererFactory.Context context) {
+	public AbominationEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new AbominationEntityModel(context.getPart(AbominationEntityModel.LAYER)), 3.0f);
 	}
 	@Override public Identifier getTexture(AbominationEntity entity) { return TEXTURE; }
@@ -91,7 +91,7 @@ public static class EnergyBoltEntityRenderer extends EntityRenderer<EnergyBoltEn
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/energy_bolt.png");
 	private final EnergyBoltEntityModel model;
 
-	EnergyBoltEntityRenderer(EntityRendererFactory.Context context) {
+	public EnergyBoltEntityRenderer(EntityRendererFactory.Context context) {
 		super(context);
 		this.model = new EnergyBoltEntityModel(context.getPart(EnergyBoltEntityModel.LAYER));
 	}
@@ -120,7 +120,7 @@ public static class GrapnelEntityRenderer extends EntityRenderer<GrapnelEntity> 
 	private static final Identifier TEXTURE = RickMortyMod.id("textures/entity/energy_bolt.png");
 	private final EnergyBoltEntityModel model;
 
-	GrapnelEntityRenderer(EntityRendererFactory.Context context) {
+	public GrapnelEntityRenderer(EntityRendererFactory.Context context) {
 		super(context);
 		this.model = new EnergyBoltEntityModel(context.getPart(EnergyBoltEntityModel.LAYER));
 	}

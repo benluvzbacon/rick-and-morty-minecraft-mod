@@ -78,19 +78,16 @@ public class PortalAnomalyEntity extends MobEntity {
 		}
 	}
 
-	@Override
 	public void shootAt(LivingEntity target, float pullProgress) {
 		EnergyBoltEntity bolt = EnergyBoltEntity.anomalyBolt(this, target, 5.0f);
 		getWorld().spawnEntity(bolt);
 		playSound(ModSounds.ANOMALY, 1.0f, 1.5f);
 	}
 
-	@Override
 	public boolean handleFallDamage(float fallDistance, float damageMultiplier, DamageSource damageSource) {
 		return false;
 	}
 
-	@Override
 	protected net.minecraft.util.math.Vec3d applyEffectiveMovementFactors(net.minecraft.util.math.Vec3d movementInput) {
 		return movementInput.multiply(0.98);
 	}

@@ -51,7 +51,7 @@ public class FluidTankBlockEntity extends BlockEntity {
 			BlockState state = getCachedState();
 			int level = getLevel();
 			if (state.get(dev.benluvzbacon.rickmorty.block.FluidTankBlock.LEVEL) != level) {
-				world.setBlockState(pos, state.with(dev.benluvzbacon.rickmorty.block.FluidTankBlock.LEVEL, level), BlockState.NOTIFY_ALL);
+				world.setBlockState(pos, state.with(dev.benluvzbacon.rickmorty.block.FluidTankBlock.LEVEL, level), net.minecraft.block.Block.NOTIFY_ALL);
 			}
 		}
 	}

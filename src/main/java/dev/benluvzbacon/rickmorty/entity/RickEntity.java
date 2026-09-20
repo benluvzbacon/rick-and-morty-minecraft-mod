@@ -58,7 +58,6 @@ public class RickEntity extends PathAwareEntity {
 		this.targetSelector.add(1, new RevengeGoal(this));
 	}
 
-	@Override
 	public void shootAt(LivingEntity target, float pullProgress) {
 		EnergyBoltEntity bolt = EnergyBoltEntity.portalBolt(this, target, 6.0f);
 		getWorld().spawnEntity(bolt);

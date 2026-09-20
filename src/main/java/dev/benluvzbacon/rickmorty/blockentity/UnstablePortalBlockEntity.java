@@ -64,7 +64,7 @@ public class UnstablePortalBlockEntity extends BlockEntity {
 			case 1 -> ModEntities.PARASITE;
 			default -> ModEntities.CRONENBERG_MUTANT;
 		};
-		Entity entity = type.create(world, null, null, pos.up(), SpawnReason.EVENT, true, false);
+		Entity entity = type.spawn(world, pos.up(), SpawnReason.EVENT);
 		if (entity != null) {
 			spawnsLeft--;
 			markDirty();

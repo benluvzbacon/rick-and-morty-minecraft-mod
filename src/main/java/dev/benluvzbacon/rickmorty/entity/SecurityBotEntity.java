@@ -67,7 +67,6 @@ public class SecurityBotEntity extends PathAwareEntity {
 		this.lifespan = ticks;
 	}
 
-	@Override
 	public void shootAt(LivingEntity target, float pullProgress) {
 		EnergyBoltEntity bolt = EnergyBoltEntity.laserBolt(this, target, 5.0f);
 		getWorld().spawnEntity(bolt);

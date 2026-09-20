@@ -61,7 +61,7 @@ public class PortalBlock extends BlockWithEntity {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return checkType(type, ModBlockEntities.PORTAL_BLOCK_ENTITY, PortalBlockEntity::tick);
+		return net.minecraft.block.BlockWithEntity.checkType(type, ModBlockEntities.PORTAL_BLOCK_ENTITY, PortalBlockEntity::tick);
 	}
 
 	@Override
@@ -95,7 +95,7 @@ public class PortalBlock extends BlockWithEntity {
 	}
 
 	/** Places (or replaces) a portal block pair head + feet handled as single block. */
-	public static PortalBlockEntity place(World world, BlockPos pos, PortalColor color) {
+	public static PortalBlockEntity place(net.minecraft.world.StructureWorldAccess world, BlockPos pos, PortalColor color) {
 		BlockState state = dev.benluvzbacon.rickmorty.registry.ModBlocks.PORTAL_BLOCK.getDefaultState().with(COLOR, color);
 		world.setBlockState(pos, state, Block.NOTIFY_ALL);
 		BlockEntity be = world.getBlockEntity(pos);

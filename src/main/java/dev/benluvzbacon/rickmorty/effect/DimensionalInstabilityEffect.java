@@ -17,7 +17,6 @@ public class DimensionalInstabilityEffect extends StatusEffect {
 		super(StatusEffectCategory.NEUTRAL, 0x39ff88);
 	}
 
-	@Override
 	public boolean canApplyUpdateEffect(int duration, int amplifier) {
 		return duration % 60 == 0;
 	}

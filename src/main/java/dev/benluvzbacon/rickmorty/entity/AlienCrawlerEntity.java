@@ -39,7 +39,6 @@ public class AlienCrawlerEntity extends HostileEntity {
 		this.targetSelector.add(3, new ActiveTargetGoal<>(this, MortyEntity.class, true));
 	}
 
-	@Override
 	protected float getActiveEyeHeight(net.minecraft.entity.EntityPose pose, net.minecraft.entity.EntityDimensions dimensions) {
 		return 0.45f;
 	}

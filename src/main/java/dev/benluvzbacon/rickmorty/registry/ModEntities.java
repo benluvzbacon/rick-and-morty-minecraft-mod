@@ -96,7 +96,7 @@ public class ModEntities {
 				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, HostileEntity::canSpawnInDark);
 		SpawnRestriction.register(SECURITY_BOT, SpawnLocationTypes.ON_GROUND,
 				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, PathAwareEntity::canMobSpawn);
-		SpawnRestriction.register(PORTAL_ANOMALY, SpawnLocationTypes.IN_AIR,
+		SpawnRestriction.register(PORTAL_ANOMALY, SpawnLocationTypes.ON_GROUND,
 				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canMobSpawn);
 
 		// biome placement (config-scaled weights)
@@ -125,7 +125,7 @@ public class ModEntities {
 														  SpawnGroup group, EntityType<T> type, int weight, int min, int max) {
 		int scaled = Math.max(1, (int) (weight * ModConfig.get().mobSpawnMultiplier));
 		String tagPath = dimKey.getValue().getPath() + "_spawnable";
-		BiomeModifications.addSpawn(BiomeSelectors.includeForKey(
+		BiomeModifications.addSpawn(BiomeSelectors.includeByKey(
 						net.minecraft.registry.RegistryKey.of(net.minecraft.registry.RegistryKeys.BIOME,
 								biomeFor(dimKey))),
 				group, type, scaled, min, max);
