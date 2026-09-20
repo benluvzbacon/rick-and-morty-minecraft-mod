@@ -209,7 +209,7 @@ public class SelfTest {
 					net.minecraft.component.type.NbtComponent.of(nbt));
 			// aim at ground
 			fake.setSneaking(true);
-			fake.setPos(base.getX() + 0.5, base.getY(), base.getZ() + 0.5);
+			fake.setPos(base.getX() + 0.5, base.getY() + 1.0, base.getZ() + 0.5); // feet ON TOP of the ground block
 			fake.setPitch(60f);
 			TypedActionResult<ItemStack> result = gun.use(overworld, fake, Hand.MAIN_HAND);
 			fake.setSneaking(false);
@@ -292,7 +292,7 @@ public class SelfTest {
 			check("tiered recipes present", anyTier2Plus, "has t2+");
 
 			// place a quantum computer -> tier should rise
-			world.setBlockState(pos.up(2), ModBlocks.QUANTUM_COMPUTER.getDefaultState());
+			world.setBlockState(pos.up(1), ModBlocks.QUANTUM_COMPUTER.getDefaultState());
 			check("quantum computer boosts tier", bench.computeTier() >= 2, "tier=" + bench.computeTier());
 			if (!all.isEmpty()) {
 				WorkbenchRecipe any = all.get(0).value();
