@@ -177,8 +177,9 @@ public class RMChunkGenerator extends ChunkGenerator {
 
 	// ---------------------------------------------------------------- required overrides
 
+	@Override
 	public void carve(ChunkRegion chunkRegion, long seed, NoiseConfig noiseConfig, BiomeAccess biomeAccess,
-					  StructureAccessor structureAccessor, Chunk chunk) {
+					  StructureAccessor structureAccessor, Chunk chunk, net.minecraft.world.gen.carver.Carver carver) {
 		// no carvers; caves are baked into the density function
 	}
 
