@@ -53,7 +53,4 @@ public class FollowRickGoal extends Goal {
 		}
 	}
 
-	private interface LivingEntityAlive extends net.minecraft.entity.EntityPredicate {
-		EntityPredicate ALIVE = entity -> entity instanceof net.minecraft.entity.LivingEntity le && le.isAlive();
-	}
 }

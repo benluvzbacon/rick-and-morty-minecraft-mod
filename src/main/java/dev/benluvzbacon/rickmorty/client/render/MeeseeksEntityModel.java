@@ -75,15 +75,16 @@ public class MeeseeksEntityModel extends EntityModel<MeeseeksEntity> {
 	}
 
 	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay,
-					   float red, float green, float blue, float alpha) {
+	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
 		int d = this.desperation;
 		if (d < 0) d = 0;
 		if (d > 2) d = 2;
-		// fresh blue -> agitated red
-		float r = 1f;
-		float g = Math.max(0.3f, 1f - d * 0.25f);
-		float b = Math.max(0.3f, 1f - d * 0.2f);
-		root.render(matrices, vertices, light, overlay, r, g, b, alpha);
+		// fresh blue -> agitated red, tint via ARGB multiplicative color
+		int r = 255;
+		int g = Math.max(80, 255 - d * 64);
+		int b = Math.max(80, 255 - d * 51);
+		int tinted = (color & 0xFF000000) | (((((color >> 16) & 255) * r / 255) & 255) << 16)
+				| (((((color >> 8) & 255) * g / 255) & 255) << 8) | (((color & 255) * b / 255) & 255);
+		root.render(matrices, vertices, light, overlay, tinted);
 	}
 }
