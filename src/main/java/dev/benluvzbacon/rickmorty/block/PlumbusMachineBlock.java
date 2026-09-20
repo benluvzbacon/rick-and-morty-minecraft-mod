@@ -42,7 +42,7 @@ public class PlumbusMachineBlock extends BlockWithEntity {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
+		return (w, p2, st, be) -> { if (be instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(w, p2, st, pbe); };
 	}
 
 	@Override

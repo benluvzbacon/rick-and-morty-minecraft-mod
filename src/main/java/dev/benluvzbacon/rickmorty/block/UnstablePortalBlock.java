@@ -36,7 +36,7 @@ public class UnstablePortalBlock extends BlockWithEntity {
 	@Nullable
 	@Override
 	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
+		return (w, p2, st, be) -> { if (be instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(w, p2, st, pbe); };
 	}
 
 	@Override

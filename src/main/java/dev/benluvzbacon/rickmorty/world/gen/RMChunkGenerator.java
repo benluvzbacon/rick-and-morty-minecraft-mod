@@ -187,6 +187,11 @@ public class RMChunkGenerator extends ChunkGenerator {
 	}
 
 	@Override
+	public void populateEntities(net.minecraft.world.chunk.Chunk chunk) {
+		// ambient mobs are handled by the vanilla spawner + our biome spawn rules
+	}
+
+	@Override
 	public CompletableFuture<Chunk> populateNoise(Blender blender, NoiseConfig noiseConfig,
 											  StructureAccessor structureAccessor, Chunk chunk) {
 		ChunkPos chunkPos = chunk.getPos();
