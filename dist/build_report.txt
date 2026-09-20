@@ -1,192 +1,33 @@
 ===== BUILD LOG (errors & tail) =====
-22:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-27:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-32:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
-35:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-40:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-45:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-50:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-55:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-60:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-78:  Note: Recompile with -Xlint:unchecked for details.Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-83:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-88:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-93:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-98:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-103:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-108:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-113:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-117:      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
-161:Note: Recompile with -Xlint:unchecked for details.Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-166:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-171:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-176:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-181:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-186:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-191:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-196:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-200:    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
+22:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
+25:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:189: error: method does not override or implement a method from a supertype
+41:  Note: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:189: error: method does not override or implement a method from a supertype
+43:  	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
+116:Note: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:189: error: method does not override or implement a method from a supertype
+118:	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
 ----- full javac diagnostics -----
-22:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-23-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
-24-		        ^
-25-  where T is a type-variable:
+22:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
+23-public class RMChunkGenerator extends ChunkGenerator {
+24-       ^
+25:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:189: error: method does not override or implement a method from a supertype
+26-	@Override
+27-	^
+28-Note: Some input files use unchecked or unsafe operations.
 --
-27:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-28-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
-29-		                    ^
-30-  where T is a type-variable:
+41:  Note: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:189: error: method does not override or implement a method from a supertype
+42-  	@Override
+43:  	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
+44-  public class RMChunkGenerator extends ChunkGenerator {
+45-         ^
+46-  2 errors
 --
-32:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
-33-public class RMChunkGenerator extends ChunkGenerator {
-34-       ^
-35:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-36-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
-37-		        ^
-38-  where T is a type-variable:
---
-40:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-41-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
-42-		                    ^
-43-  where T is a type-variable:
---
-45:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-46-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
-47-		        ^
-48-  where T is a type-variable:
---
-50:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-51-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
-52-		                    ^
-53-  where T is a type-variable:
---
-55:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-56-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
-57-		        ^
-58-  where T is a type-variable:
---
-60:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-61-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
-62-		                    ^
-63-  where T is a type-variable:
---
-78:  Note: Recompile with -Xlint:unchecked for details.Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-79-  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
-80-  		        ^
-81-    where T is a type-variable:
---
-83:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-84-  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
-85-  		                    ^
-86-    where T is a type-variable:
---
-88:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-89-  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
-90-  		        ^
-91-    where T is a type-variable:
---
-93:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-94-  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
-95-  		                    ^
-96-    where T is a type-variable:
---
-98:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-99-  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
-100-  		        ^
-101-    where T is a type-variable:
---
-103:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-104-  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
-105-  		                    ^
-106-    where T is a type-variable:
---
-108:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-109-  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
-110-  		        ^
-111-    where T is a type-variable:
---
-113:  /home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-114-  		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
-115-  		                    ^
-116-    where T is a type-variable:
-117:      T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
-118-  public class RMChunkGenerator extends ChunkGenerator {
-119-         ^
-120-  9 errors
---
-161:Note: Recompile with -Xlint:unchecked for details.Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-162-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
-163-		        ^
-164-  where T is a type-variable:
---
-166:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/portal/PortalBlock.java:64: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-167-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PortalBlockEntity pbe) PortalBlockEntity.tick(world, pos, state, pbe); };
-168-		                    ^
-169-  where T is a type-variable:
---
-171:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-172-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
-173-		        ^
-174-  where T is a type-variable:
---
-176:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/PlumbusMachineBlock.java:45: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-177-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof PlumbusMachineBlockEntity pbe) PlumbusMachineBlockEntity.tick(world, pos, state, pbe); };
-178-		                    ^
-179-  where T is a type-variable:
---
-181:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-182-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
-183-		        ^
-184-  where T is a type-variable:
---
-186:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/AlienReactorBlock.java:53: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-187-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof AlienReactorBlockEntity pbe) AlienReactorBlockEntity.tick(world, pos, state, pbe); };
-188-		                    ^
-189-  where T is a type-variable:
---
-191:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable world is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-192-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
-193-		        ^
-194-  where T is a type-variable:
---
-196:/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/block/UnstablePortalBlock.java:39: error: variable state is already defined in method <T>getTicker(World,BlockState,BlockEntityType<T>)
-197-		return (world, pos, state, blockEntity) -> { if (blockEntity instanceof UnstablePortalBlockEntity pbe) UnstablePortalBlockEntity.tick(world, pos, state, pbe); };
-198-		                    ^
-199-  where T is a type-variable:
-200:    T extends BlockEntity declared in method <T>getTicker(World,BlockState,BlockEntityType<T>)/home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
-201-public class RMChunkGenerator extends ChunkGenerator {
-202-       ^
-203-9 errors
+116:Note: Recompile with -Xlint:unchecked for details./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:189: error: method does not override or implement a method from a supertype
+117-	@Override
+118:	^Note: Some input files use unchecked or unsafe operations./home/runner/work/rick-and-morty-minecraft-mod/rick-and-morty-minecraft-mod/src/main/java/dev/benluvzbacon/rickmorty/world/gen/RMChunkGenerator.java:33: error: RMChunkGenerator is not abstract and does not override abstract method populateEntities(ChunkRegion) in ChunkGenerator
+119-public class RMChunkGenerator extends ChunkGenerator {
+120-       ^
+121-2 errors
 ----- tail -----
-	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
-	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
-	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
-	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
-	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
-	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
-	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
-	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
-	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
-	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
-	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
-	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
-	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
-	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
-	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
-	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
-	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
-	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
-	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
-	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
-	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
-	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
-	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
-	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
-	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
-	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
-	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
-	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:40)
 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
@@ -212,9 +53,38 @@
 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 
 
-BUILD FAILED in 1m 2s
+BUILD FAILED in 1m 5s
 1 actionable task: 1 executed
