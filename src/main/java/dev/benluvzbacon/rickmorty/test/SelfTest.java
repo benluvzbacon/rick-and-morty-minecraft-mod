@@ -203,7 +203,9 @@ public class SelfTest {
 			ItemStack gun = new ItemStack(ModItems.PORTAL_GUN);
 			PortalGunItem.addFluid(gun, 500);
 			fake.setStackInHand(Hand.MAIN_HAND, gun);
-			var nbt = new net.minecraft.nbt.NbtCompound();
+			// select the alien dimension WITHOUT clobbering the fluid stored in custom_data
+			var existing = gun.get(net.minecraft.component.DataComponentTypes.CUSTOM_DATA);
+			var nbt = existing == null ? new net.minecraft.nbt.NbtCompound() : existing.copyNbt();
 			nbt.putInt("dim", 1); // alien
 			gun.set(net.minecraft.component.DataComponentTypes.CUSTOM_DATA,
 					net.minecraft.component.type.NbtComponent.of(nbt));
