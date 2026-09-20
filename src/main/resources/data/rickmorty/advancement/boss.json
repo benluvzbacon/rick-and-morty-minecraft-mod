@@ -1,0 +1,26 @@
+{
+  "parent": "rickmorty:travel_alien",
+  "display": {
+    "icon": {
+      "id": "rickmorty:interdimensional_crystal",
+      "count": 1
+    },
+    "title": "Dimensional Slayer",
+    "description": "Destroy the Interdimensional Abomination",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "entity": {
+        "type": "rickmorty:interdimensional_abomination"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}

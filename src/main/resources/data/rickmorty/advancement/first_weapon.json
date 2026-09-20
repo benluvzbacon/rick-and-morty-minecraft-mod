@@ -1,0 +1,29 @@
+{
+  "parent": "rickmorty:root",
+  "display": {
+    "icon": {
+      "id": "rickmorty:portal_blaster",
+      "count": 1
+    },
+    "title": "Locked and Burped",
+    "description": "Craft your first piece of Rick tech",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rickmorty:portal_blaster"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

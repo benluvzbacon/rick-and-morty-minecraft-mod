@@ -1,0 +1,29 @@
+{
+  "parent": "rickmorty:root",
+  "display": {
+    "icon": {
+      "id": "rickmorty:rick_workbench",
+      "count": 1
+    },
+    "title": "Weapons Lab",
+    "description": "Build Rick's Workbench",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rickmorty:rick_workbench"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

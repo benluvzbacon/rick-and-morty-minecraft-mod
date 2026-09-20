@@ -1,0 +1,21 @@
+{
+  "parent": "rickmorty:portal_gun",
+  "display": {
+    "icon": {
+      "id": "rickmorty:rift_shard",
+      "count": 1
+    },
+    "title": "Body Horror Tuesday",
+    "description": "Visit the Cronenberg World (it was fine before)",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "travel": {
+      "trigger": "minecraft:changed_dimension",
+      "to": "rickmorty:cronenberg_world"
+    }
+  }
+}

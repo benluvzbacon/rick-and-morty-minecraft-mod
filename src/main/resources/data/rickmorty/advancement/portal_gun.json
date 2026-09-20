@@ -1,0 +1,29 @@
+{
+  "parent": "rickmorty:workbench",
+  "display": {
+    "icon": {
+      "id": "rickmorty:portal_gun",
+      "count": 1
+    },
+    "title": "Portal Gun!",
+    "description": "Craft the legendary interdimensional device",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rickmorty:portal_gun"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

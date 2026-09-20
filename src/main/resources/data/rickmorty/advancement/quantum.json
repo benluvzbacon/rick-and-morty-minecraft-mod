@@ -1,0 +1,29 @@
+{
+  "parent": "rickmorty:workbench",
+  "display": {
+    "icon": {
+      "id": "rickmorty:quantum_computer",
+      "count": 1
+    },
+    "title": "A Modest Brain",
+    "description": "Power up the lab: build a Quantum Computer",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rickmorty:quantum_computer"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

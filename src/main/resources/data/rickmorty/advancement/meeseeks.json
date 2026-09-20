@@ -1,0 +1,23 @@
+{
+  "parent": "rickmorty:workbench",
+  "display": {
+    "icon": {
+      "id": "rickmorty:meeseeks_box",
+      "count": 1
+    },
+    "title": "CAAAAAAN DO!",
+    "description": "Summon a Meeseeks",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "summon": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "entity": {
+        "type": "rickmorty:meeseeks"
+      }
+    }
+  }
+}

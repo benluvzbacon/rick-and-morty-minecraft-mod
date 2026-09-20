@@ -1,0 +1,29 @@
+{
+  "parent": "rickmorty:travel_citadel",
+  "display": {
+    "icon": {
+      "id": "rickmorty:dimension_eraser",
+      "count": 1
+    },
+    "title": "Very Careful Now",
+    "description": "Wield the Dimension Eraser",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pickup": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rickmorty:dimension_eraser"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

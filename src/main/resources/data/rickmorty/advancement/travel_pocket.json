@@ -1,0 +1,21 @@
+{
+  "parent": "rickmorty:portal_gun",
+  "display": {
+    "icon": {
+      "id": "rickmorty:shrink_ray",
+      "count": 1
+    },
+    "title": "Pocket Universe",
+    "description": "Squeeze into a Pocket Dimension",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "travel": {
+      "trigger": "minecraft:changed_dimension",
+      "to": "rickmorty:pocket_dimension"
+    }
+  }
+}

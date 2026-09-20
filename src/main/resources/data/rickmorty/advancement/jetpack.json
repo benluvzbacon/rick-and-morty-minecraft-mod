@@ -1,0 +1,29 @@
+{
+  "parent": "rickmorty:travel_citadel",
+  "display": {
+    "icon": {
+      "id": "rickmorty:jetpack",
+      "count": 1
+    },
+    "title": "Rick Sanchez Airlines",
+    "description": "Outfit yourself with a jetpack",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pickup": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rickmorty:jetpack"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

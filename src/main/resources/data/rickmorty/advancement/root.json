@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "id": "rickmorty:portal_gun",
+      "count": 1
+    },
+    "title": "Rick and Morty: Interdimensional Craft",
+    "description": "Get involved with dimensions they said...",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "background": "rickmorty:textures/block/sci_fi_metal.png",
+  "criteria": {
+    "pickup": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  }
+}
